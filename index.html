@@ -1,0 +1,3368 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Port Chester Training Club | Group Fitness & Performance Training
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: 'Nano';
+        src: url('fonts/Zeniq\ Nano.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      h1,
+      h2,
+      .logo {
+        font-family: 'Nano', sans-serif;
+        letter-spacing: 2px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', Arial, sans-serif;
+        background: #000;
+        color: #fff;
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .top-banner {
+        background: #fff;
+        color: #000;
+        text-align: center;
+        padding: 10px 20px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+      }
+
+      header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: visible;
+}
+
+      nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+  height: 100px; /* controls navbar thickness */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 76px;
+  overflow: visible;
+}
+
+.logo img {
+  height: 200px; /* keeps logo visually large */
+  width: auto;
+  max-height: none;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-name {
+  font-family: 'Nano', sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+}
+
+      .logo span {
+        color: #fff;
+        opacity: 0.65;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 28px;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .nav-links a {
+        color: rgba(255, 255, 255, 0.75);
+        transition: 0.25s ease;
+      }
+
+      .nav-links a:hover {
+        color: #fff;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #fff;
+        color: #000 !important;
+        padding: 14px 24px;
+        font-weight: 900;
+        text-transform: uppercase;
+        border-radius: 999px;
+        transition: 0.25s ease;
+        box-shadow: 0 12px 40px rgba(255, 255, 255, 0.12);
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        background: #e8e8e8;
+        box-shadow: 0 18px 50px rgba(255, 255, 255, 0.2);
+      }
+
+      .hero-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .secondary-btn {
+      background: transparent;
+      color: #fff !important;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-shadow: none;
+    }
+
+    .secondary-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff !important;
+      box-shadow: none;
+    }
+
+      .hero {
+        min-height: 88vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 90px 24px;
+        background:
+          radial-gradient(
+            circle at center,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(0, 0, 0, 0.2) 34%,
+            rgba(0, 0, 0, 0.95) 78%
+          ),
+          linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.92)),
+          url('https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?auto=format&fit=crop&w=1600&q=80');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero-content {
+        max-width: 900px;
+        animation: fadeUp 0.8s ease forwards;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        color: #fff;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 18px;
+        padding: 8px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(10px);
+      }
+
+      h1 {
+        font-size: clamp(46px, 7vw, 92px);
+        line-height: 0.93;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        letter-spacing: -3px;
+        font-weight: 900;
+      }
+
+      .hero p {
+        font-size: 20px;
+        max-width: 700px;
+        margin: 0 auto 34px;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      section {
+        padding: 95px 24px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 52px;
+      }
+
+      .section-title h2 {
+        font-size: clamp(34px, 5vw, 62px);
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 16px;
+        letter-spacing: -2px;
+        font-weight: 900;
+      }
+
+      .section-title p {
+        color: rgba(255, 255, 255, 0.65);
+        max-width: 720px;
+        margin: auto;
+        font-size: 18px;
+      }
+
+      .why-us {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255, 255, 255, 0.08),
+      transparent 35%
+    ),
+    #000;
+  color: #fff;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.why-card {
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 22px;
+  padding: 30px;
+  transition: 0.25s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.085);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.why-card span {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 900;
+  color: #000;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.why-card h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  font-weight: 900;
+}
+
+.why-card p {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 15px;
+}
+
+@media (max-width: 950px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+      .features {
+        background: #fff;
+        color: #000;
+      }
+
+      .features .section-title p {
+        color: #444;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .feature-card {
+        padding: 34px;
+        background: linear-gradient(180deg, #f7f7f7, #ededed);
+        border: 1px solid #dedede;
+        border-radius: 22px;
+        transition: 0.25s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+      }
+
+      .feature-card h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        font-weight: 900;
+        letter-spacing: -0.5px;
+      }
+
+      .programs {
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(255, 255, 255, 0.08),
+            transparent 35%
+          ),
+          #080808;
+      }
+
+      .program-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 26px;
+      }
+
+      .program-card {
+        background: rgba(255, 255, 255, 0.055);
+        border: 1px solid rgba(255, 255, 255, 0.11);
+        border-radius: 24px;
+        padding: 34px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.25s ease;
+        backdrop-filter: blur(10px);
+      }
+
+      .program-card:hover {
+        transform: translateY(-7px);
+        border-color: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.085);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+      }
+
+      .program-card h3 {
+        font-size: 32px;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+        font-weight: 900;
+        letter-spacing: -1px;
+      }
+
+      .program-card p {
+        color: rgba(255, 255, 255, 0.72);
+        margin-bottom: 20px;
+      }
+
+      .membership {
+        background: #000;
+        color: #fff;
+      }
+
+      .membership .section-title p {
+        color: #aaa;
+      }
+
+      .membership-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .membership-card {
+        background: #0a0a0a;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        padding: 36px;
+        text-align: center;
+        transition: 0.25s ease;
+        min-height: 620px;
+
+        display: grid;
+        grid-template-rows: auto 125px 115px 1fr auto;
+        align-items: start;
+      }
+
+      .membership-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(255, 255, 255, 0.28);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+      }
+
+      .membership-card.featured {
+        border-color: rgba(255, 255, 255, 0.35);
+      }
+
+      .membership .tag {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+        margin-bottom: 22px;
+      }
+
+      .card-title-area {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        padding-bottom: 24px;
+      }
+
+      .membership-card h3 {
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 1.35;
+        margin-bottom: 10px;
+      }
+
+      .membership-card .sub {
+        font-size: 13px;
+        color: #888;
+      }
+
+      .price-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 115px;
+      }
+
+      .membership-card .price {
+        font-size: 42px;
+        font-weight: 900;
+        color: #fff;
+        padding-top: 0;
+        border-top: none;
+      }
+
+      .membership-card .price span {
+        font-size: 16px;
+        font-weight: 700;
+        color: #aaa;
+      }
+
+      .price-sub {
+        font-size: 13px;
+        color: #888;
+        margin-top: 6px;
+        font-weight: 700;
+      }
+
+      .membership-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .membership-card ul li {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #ccc;
+        font-weight: 700;
+      }
+
+      .cta-btn {
+        display: inline-block;
+        background: #1e90ff;
+        color: #fff;
+        padding: 14px 20px;
+        border-radius: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        transition: 0.25s ease;
+      }
+
+      .cta-btn:hover {
+        background: #0f6fd1;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(30, 144, 255, 0.4);
+      }
+
+      @media (max-width: 850px) {
+        .membership-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .membership-card {
+          min-height: auto;
+          grid-template-rows: auto;
+        }
+      }
+
+      .schedule {
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(255, 255, 255, 0.08),
+            transparent 35%
+          ),
+          linear-gradient(180deg, #050505, #000);
+        color: #fff;
+      }
+
+      .schedule-kicker {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 13px;
+        font-weight: 900;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 10px;
+      }
+
+      .schedule-shell {
+        padding: 18px;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+        overflow-x: auto;
+      }
+
+      .schedule-table {
+        min-width: 1050px;
+        display: grid;
+        grid-template-columns: 90px repeat(7, 1fr);
+        gap: 10px;
+      }
+
+      .schedule-head {
+        background: #fff;
+        color: #000;
+        text-align: center;
+        padding: 14px 10px;
+        border-radius: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+
+      .time-head {
+        background: rgba(255, 255, 255, 0.88);
+      }
+
+      .time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 52px;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 900;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 10px;
+      }
+
+      .schedule-table > div:not(.schedule-head):not(.time):not(.class) {
+        min-height: 52px;
+        background: rgba(255, 255, 255, 0.025);
+        border-radius: 10px;
+      }
+
+      .class {
+        min-height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.1;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        transition: 0.25s ease;
+      }
+
+      .class:hover {
+        transform: translateY(-3px);
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .perform {
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+      }
+
+      .sweat {
+        background: #fff;
+        color: #000;
+      }
+
+      .power {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+      }
+
+      .hyrox {
+        background: rgba(255, 255, 255, 0.88);
+        color: #000;
+      }
+
+      .open-gym-card {
+        margin: 28px auto 0;
+        max-width: 900px;
+        padding: 28px;
+        border-radius: 24px;
+        background: #fff;
+        color: #000;
+        text-align: center;
+      }
+
+      .open-gym-card h3 {
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+        font-weight: 900;
+      }
+
+      .open-gym-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .open-gym-grid p {
+        font-weight: 700;
+      }
+
+      .open-gym-grid span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 900;
+        margin-bottom: 4px;
+      }
+
+      @media (max-width: 850px) {
+        .schedule-shell {
+          padding: 12px;
+          border-radius: 20px;
+        }
+
+        .open-gym-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .tag {
+        display: inline-block;
+        color: #000;
+        background: #fff;
+        font-size: 12px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+        letter-spacing: 0.5px;
+      }
+
+      .price {
+        font-size: 16px;
+        font-weight: 900;
+        color: #fff;
+        padding-top: 18px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .athletes {
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.92)),
+          url('https://images.unsplash.com/photo-1517964603305-11c0f6f66012?auto=format&fit=crop&w=1600&q=80');
+        background-size: cover;
+        background-position: center;
+        color: #000;
+        text-align: center;
+      }
+
+      .athletes h2 {
+        font-size: clamp(38px, 5vw, 70px);
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 20px;
+        font-weight: 900;
+        letter-spacing: -2px;
+      }
+
+      .athletes p {
+        max-width: 800px;
+        margin: auto;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .steps {
+        background: #fff;
+        color: #000;
+      }
+
+      .steps .section-title p {
+        color: #444;
+      }
+
+      .step-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .step {
+        padding: 32px;
+        border: 1px solid #ddd;
+        border-radius: 22px;
+        background: #f7f7f7;
+        transition: 0.25s ease;
+      }
+
+      .step:hover {
+        transform: translateY(-6px);
+        background: #fff;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+      }
+
+      .number {
+        font-size: 54px;
+        color: #000;
+        font-weight: 900;
+        margin-bottom: 10px;
+        line-height: 1;
+      }
+
+      .step h3 {
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: 900;
+      }
+
+      .cta {
+        background:
+          radial-gradient(
+            circle at center,
+            rgba(255, 255, 255, 0.1),
+            transparent 45%
+          ),
+          #000;
+        text-align: center;
+      }
+
+      .cta h2 {
+        font-size: clamp(38px, 5vw, 70px);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: 900;
+        letter-spacing: -2px;
+      }
+
+      .cta p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 18px;
+        margin: 0 auto 32px;
+        max-width: 720px;
+      }
+
+      .contact {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.08),
+      transparent 35%
+    ),
+    #000;
+  color: #fff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.contact-info {
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 24px;
+  padding: 36px;
+}
+
+.contact-info h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  font-weight: 900;
+}
+
+.contact-item {
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item span {
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 6px;
+}
+
+.contact-item p,
+.contact-item a {
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 700;
+}
+
+.contact-item a:hover {
+  color: #fff;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.map-card {
+  min-height: 520px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 850px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-card {
+    min-height: 360px;
+  }
+}
+
+      footer {
+        background: #000;
+        padding: 42px 24px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.55);
+        text-align: center;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 850px) {
+        .nav-links {
+          display: none;
+        }
+
+        .feature-grid,
+        .program-grid,
+        .step-grid {
+          grid-template-columns: 1fr;
+        }
+
+        section {
+          padding: 72px 20px;
+        }
+
+        .logo {
+          font-size: 18px;
+        }
+
+        h1 {
+          letter-spacing: -1.5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top-banner">
+  Now accepting our first 25 Founding Members. Train with a community that knows your name.
+</div>
+
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/pctc logo-01.png" alt="PCTC Logo" />
+        </div>
+
+        <div class="nav-links">
+          <a href="#programs">Programs</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#membership">Membership</a>
+          <a href="#training">Training</a>
+          <a href="#athletes">Athletes</a>
+          <a href="#contact" class="btn">Start Today</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Personal Training • Small Group Fitness • Athlete Performance</div>
+
+    <h1>Private Coaching. Small Group Energy. Real Performance.</h1>
+
+    <p>
+      Port Chester Training Club is more than a place to work out. We are building
+      a supportive training community where people know your name, celebrate your
+      progress, and help you become stronger, more confident, and more consistent.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#contact" class="btn">Schedule Your Free Consultation</a>
+      <a href="#programs" class="btn secondary-btn">View Programs</a>
+    </div>
+  </div>
+</section>
+
+<section class="why-us">
+  <div class="container">
+    <div class="section-title">
+      <h2>Why Train With Us</h2>
+      <p>
+        We are not a crowded commercial gym. Port Chester Training Club is built
+        around coaching, structure, accountability, and attention to detail.
+      </p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <span>01</span>
+        <h3>Personalized Coaching</h3>
+        <p>
+          Every member is coached, corrected, and guided. We focus on proper
+          movement, safe progression, and long-term results.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <span>02</span>
+        <h3>Small Group Environment</h3>
+        <p>
+          Our sessions are intentionally kept smaller so you get the energy of a
+          group without getting lost in the crowd.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <span>03</span>
+        <h3>Performance-Based Training</h3>
+        <p>
+          Training is built around strength, conditioning, mobility, turf work,
+          sleds, dumbbells, kettlebells, and functional movement.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <span>04</span>
+        <h3>Built for Real Progress</h3>
+        <p>
+          Whether your goal is fat loss, strength, athletic performance, or
+          simply feeling better, every session has a purpose.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Built for Every Goal</h2>
+          <p>
+            Whether you want to sweat, get stronger, improve athletic
+            performance, or train with more personal attention, we have a
+            program for you.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Personal Attention</h3>
+            <p>
+              One-on-one, semi-private, and small group options for more
+              customized training.
+            </p>
+          </div>
+
+          <div class="feature-card">
+  <h3>Small Group Community</h3>
+  <p>
+    Train alongside people who show up, work hard, and encourage each other.
+    Our small group environment creates accountability without the intimidation
+    of a crowded gym.
+  </p>
+</div>
+
+          <div class="feature-card">
+            <h3>Athlete Development</h3>
+            <p>
+              Speed, strength, conditioning, and confidence training for school
+              athletes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" id="programs">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Programs</h2>
+          <p>
+            Choose the training environment that fits your goals, schedule, and
+            experience level.
+          </p>
+        </div>
+
+        <div class="program-grid">
+          <div class="program-card">
+            <div>
+              <span class="tag">Group Fitness</span>
+              <h3>Sweat Class</h3>
+              <p>
+                A high-energy conditioning class focused on cardio, core,
+                bodyweight movements, dumbbells, kettlebells, and functional
+                circuits. Perfect for burning calories, building endurance, and
+                leaving the gym feeling accomplished.
+              </p>
+            </div>
+
+            <div class="price">
+              Great for: fat loss, conditioning, and full-body fitness
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div>
+              <span class="tag">Strength & Performance</span>
+              <h3>Perform Class</h3>
+              <p>
+                A performance-based class built around strength, power, athletic
+                movement, and functional training. This class is ideal for
+                people who want to move better, lift stronger, and train with
+                purpose.
+              </p>
+            </div>
+
+            <div class="price">
+              Great for: strength, power, and athletic training
+            </div>
+          </div>
+
+          <div class="program-card" id="training">
+            <div>
+              <span class="tag">Private Coaching</span>
+              <h3>Personal Training</h3>
+              <p>
+                Customized one-on-one coaching built around your exact goals.
+                Sessions may focus on strength, fat loss, mobility,
+                conditioning, injury prevention, or athletic performance.
+              </p>
+            </div>
+
+            <div class="price">
+              Available as: 1-on-1, semi-private, or small group
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div>
+              <span class="tag">Small Group Training</span>
+              <h3>Semi-Private Training</h3>
+              <p>
+                Train with a small group while still receiving coaching,
+                corrections, and a plan. This option gives you more attention
+                than a large class while keeping the energy and motivation of
+                training with others.
+              </p>
+            </div>
+
+            <div class="price">
+              Great for: friends, teams, couples, and small groups
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="membership" id="membership">
+      <div class="container">
+        <div class="section-title">
+          <h2>Membership</h2>
+          <p>
+            Simple, structured memberships designed for consistency, progress,
+            and results.
+          </p>
+        </div>
+
+        <div class="membership-grid">
+          <div class="membership-card featured">
+            <span class="tag">Limited</span>
+
+            <div class="card-title-area">
+              <h3>Founding Membership</h3>
+              <p class="sub">First 25 Members Only</p>
+            </div>
+
+            <div class="price-area">
+              <div class="price">$150<span>/month</span></div>
+              <p class="price-sub">First year only</p>
+            </div>
+
+            <ul>
+              <li>Unlimited Classes</li>
+              <li>Full Schedule Access</li>
+              <li>Founding Member Rate</li>
+            </ul>
+
+            <a href="#" class="cta-btn">Claim Spot</a>
+          </div>
+
+          <div class="membership-card">
+            <span class="tag">Unlimited</span>
+
+            <div class="card-title-area">
+              <h3>Unlimited Membership</h3>
+              <p class="sub">Full Access Membership</p>
+            </div>
+
+            <div class="price-area">
+              <div class="price">$175<span>/month</span></div>
+            </div>
+
+            <ul>
+              <li>Unlimited Classes</li>
+              <li>Full Schedule Access</li>
+              <li>All Class Types Included</li>
+            </ul>
+
+            <a href="#" class="cta-btn">Join Now</a>
+
+          </div>
+
+          <div class="membership-card">
+            <span class="tag">Flexible</span>
+
+            <div class="card-title-area">
+              <h3>3x Per Week</h3>
+              <p class="sub">Flexible Training Plan</p>
+            </div>
+
+            <div class="price-area">
+              <div class="price">$150<span>/month</span></div>
+            </div>
+
+            <ul>
+              <li>3 Classes Per Week</li>
+              <li>Sweat & Perform Access</li>
+              <li>Great for Busy Schedules</li>
+            </ul>
+
+            <a href="#" class="cta-btn">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule" id="schedule">
+      <div class="container">
+        <div class="section-title">
+          <p class="schedule-kicker">Weekly Class Lineup</p>
+          <h2>Schedule</h2>
+          <p>
+            Choose between Sweat, Perform, and Power & Performance. Every session is
+            coach-led, community-driven, and designed to help you train with purpose.
+          </p>
+        </div>
+
+        <div class="schedule-shell">
+          <div class="schedule-table">
+            <div class="schedule-head time-head">Time</div>
+            <div class="schedule-head">Monday</div>
+            <div class="schedule-head">Tuesday</div>
+            <div class="schedule-head">Wednesday</div>
+            <div class="schedule-head">Thursday</div>
+            <div class="schedule-head">Friday</div>
+            <div class="schedule-head">Saturday</div>
+            <div class="schedule-head">Sunday</div>
+
+            <div class="time">5:00am</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div></div>
+            <div></div>
+
+            <div class="time">6:00am</div>
+            <div class="class perform">Perform</div>
+            <div class="class sweat">Sweat</div>
+            <div class="class perform">Perform</div>
+            <div class="class sweat">Sweat</div>
+            <div class="class perform">Perform</div>
+            <div></div>
+            <div></div>
+
+            <div class="time">7:00am</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div></div>
+            <div></div>
+
+            <div class="time">9:00am</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="class sweat">Sweat</div>
+            <div class="class perform">Perform</div>
+
+            
+           
+
+            <div class="time">10:00am</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="class perform">Perform</div>
+            <div></div>
+
+            <div class="time">12:30pm</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div></div>
+            <div></div>
+
+            <div class="time">4:15pm</div>
+            <div class="class power">Power & Performance</div>
+            <div class="class power">Power & Performance</div>
+            <div class="class power">Power & Performance</div>
+            <div class="class power">Power & Performance</div>
+            <div class="class power">Power & Performance</div>
+            <div></div>
+            <div></div>
+
+            <div class="time">5:30pm</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div class="class perform">Perform</div>
+            <div></div>
+            <div></div>
+
+            <div class="time">6:30pm</div>
+            <div class="class perform">Perform</div>
+            <div class="class sweat">Sweat</div>
+            <div class="class perform">Perform</div>
+            <div class="class sweat">Sweat</div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="athletes" id="athletes">
+      <div class="container">
+        <h2>High Performance Training for School Athletes</h2>
+
+        <p>
+          Unlike large training groups where athletes can easily get lost, every session at Port Chester Training Club is capped at 4 athletes. This allows our coaches to deliver individualized instruction, movement corrections, and sport-specific coaching throughout the entire session. Our goal isn't simply to make athletes tired—it's to help them become stronger, faster, more coordinated, and more confident in their sport.</br>
+
+          Sessions: Monday–Friday | 4:15 PM–5:15 PM</br>
+          Investment: $60 per athlete
+        </p>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="container">
+        <div class="section-title">
+          <h2>Getting Started Is Easy</h2>
+          <p>
+            Start with a simple intro, choose your program, and begin training
+            with a coach.
+          </p>
+        </div>
+
+        <div class="step-grid">
+          <div class="step">
+            <div class="number">1</div>
+            <h3>Book an Intro</h3>
+            <p>
+              Tell us your goals, experience level, and what type of training
+              you are looking for.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="number">2</div>
+            <h3>Choose Your Program</h3>
+            <p>
+              Pick Sweat, Perform, personal training, semi-private training, or
+              athlete performance.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="number">3</div>
+            <h3>Start Training</h3>
+            <p>
+              Show up, follow the plan, get coached, and build real momentum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Ready to Start?</h2>
+      <p>
+        Schedule your free consultation, ask a question, or stop by to learn more
+        about training at Port Chester Training Club.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" >
+        <div class="logo">
+          <img src="images/pctc logo-01.png" alt="PCTC Logo" />
+        </div>
+
+        <div class="contact-item">
+          <span>Address</span>
+          <p>
+            21 North Main Street<br>
+            Suite 301-B<br>
+            Port Chester, NY 10573
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <span>Email</span>
+          <p>
+            <a href="mailto:contreras10alexis@gmail.com">
+              contact@pctrainingclub.com
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <span>Phone</span>
+          <p>
+            <a href="tel:+19145555555">
+              (914) 314-2190
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <span>Instagram</span>
+          <p>
+            <a href="#" target="_blank">
+              @pctrainingclub
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:contact@pctrainingclub.com" class="btn">
+            Email Us
+          </a>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=21+North+Main+Street+Suite+301-B+Port+Chester+NY+10573" 
+             class="btn secondary-btn" 
+             target="_blank">
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <iframe
+          src="https://www.google.com/maps?q=21%20North%20Main%20Street%20Suite%20301-B%20Port%20Chester%2C%20NY%2010573&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer>
+      <p>© 2026 Port Chester Training Club. All rights reserved.</p>
+      <p>Group Fitness • Personal Training • Athlete Performance</p>
+    </footer>
+  </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Port Chester Training Club | Coming Soon</title>
+    <meta
+      name="description"
+      content="Port Chester Training Club is coming soon to Port Chester, NY. Join the early interest list for personal training, small group classes, athlete performance, and Founding Memberships."
+    />
+    <meta name="theme-color" content="#050505" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --black: #000;
+        --ink: #050505;
+        --charcoal: #0b0b0b;
+        --panel: #101010;
+        --panel2: #151515;
+        --white: #fff;
+        --soft: #f4f4f1;
+        --grey: #a3a3a3;
+        --grey2: #737373;
+        --line: rgba(255, 255, 255, 0.12);
+        --gold: #b8a36a;
+        --gold-soft: #d8c78f;
+        --gold-deep: #8e7a49;
+        --gold-line: rgba(184, 163, 106, 0.42);
+        --gold-wash: rgba(184, 163, 106, 0.07);
+        --blue: #1476ff;
+        --blue-hover: #2f87ff;
+        --blue-deep: #0f5ed1;
+        --blue-glow: rgba(20, 118, 255, 0.22);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: 'Nano';
+        src: url('fonts/Zeniq\ Nano.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      html {
+        background: var(--black);
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Inter', Arial, sans-serif;
+        background: var(--black);
+        color: var(--white);
+        min-height: 100vh;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button,
+      input,
+      textarea {
+        font-family: 'Inter', Arial, sans-serif;
+      }
+      /* FONT LOCK: exact typography from the user's original splash page */
+      h1,
+      h2,
+      .nano {
+        font-family: 'Nano', 'Inter', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+      ::selection {
+        background: var(--gold-soft);
+        color: #000;
+      }
+      .page {
+        min-height: 100vh;
+        background: #000;
+        position: relative;
+        isolation: isolate;
+      }
+      .bg {
+        position: fixed;
+        inset: 0;
+        z-index: -3;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.92),
+            rgba(0, 0, 0, 0.64) 55%,
+            rgba(0, 0, 0, 0.88)
+          ),
+          linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.92)),
+          url('https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?auto=format&fit=crop&w=1800&q=88')
+            center/cover no-repeat;
+        filter: grayscale(1) contrast(1.05);
+      }
+      .bgfx {
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        pointer-events: none;
+        background:
+          radial-gradient(
+            circle at 75% 22%,
+            rgba(216, 199, 143, 0.11),
+            transparent 24%
+          ),
+          radial-gradient(
+            circle at 20% 72%,
+            rgba(184, 163, 106, 0.06),
+            transparent 25%
+          );
+      }
+      .top-banner {
+        background: rgba(8, 8, 8, 0.96);
+        color: var(--gold-soft);
+        text-align: center;
+        padding: 9px 18px;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.35px;
+        border-bottom: 1px solid rgba(216, 199, 143, 0.18);
+      }
+      header {
+        border-bottom: 1px solid var(--gold-line);
+        background: rgba(0, 0, 0, 0.72);
+        backdrop-filter: blur(18px);
+        position: relative;
+        z-index: 10;
+      }
+      nav {
+        width: min(1240px, calc(100% - 48px));
+        min-height: 92px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .logo {
+        height: 92px;
+        display: flex;
+        align-items: center;
+        overflow: visible;
+      }
+      .logo img {
+        height: 205px;
+        width: auto;
+        display: block;
+        object-fit: contain;
+      }
+      .nav-contact {
+        display: flex;
+        gap: 10px;
+      }
+      .nav-link {
+        min-height: 42px;
+        padding: 0 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.18s;
+      }
+      .nav-link:hover {
+        color: var(--gold-soft);
+        border-color: var(--gold-line);
+        background: var(--gold-wash);
+      }
+      .nav-link.call {
+        background: var(--soft);
+        color: #000;
+        border-color: var(--soft);
+      }
+      .nav-link.call:hover {
+        background: var(--gold-soft);
+        border-color: var(--gold-soft);
+        color: #000;
+      }
+      main {
+        padding: 72px 24px 92px;
+      }
+      .container {
+        width: min(1240px, 100%);
+        margin: auto;
+      }
+      .eyebrow,
+      .form-kicker,
+      .micro {
+        font-family: 'Inter', Arial, sans-serif;
+        color: var(--gold-soft);
+        font-size: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      .eyebrow:before {
+        content: '';
+        width: 30px;
+        height: 1px;
+        background: var(--gold);
+      }
+      h1 {
+        font-size: clamp(54px, 8vw, 108px);
+        line-height: 0.88;
+        letter-spacing: -2.6px;
+        text-wrap: balance;
+      }
+      .gold {
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1.8px var(--gold-soft);
+        paint-order: stroke fill;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        letter-spacing: -4px;
+        line-height: 0.88;
+        text-transform: uppercase;
+        text-shadow: 0 0 28px rgba(216, 199, 143, 0.08);
+      }
+      .lead {
+        margin-top: 26px;
+        color: rgba(255, 255, 255, 0.76);
+        font-size: clamp(17px, 1.45vw, 20px);
+        line-height: 1.72;
+        max-width: 650px;
+      }
+      .lead strong {
+        color: #fff;
+        font-weight: 800;
+      }
+      .secondary-copy {
+        margin-top: 14px;
+        max-width: 620px;
+        color: rgba(255, 255, 255, 0.52);
+        font-size: 15px;
+        line-height: 1.75;
+      }
+      .quick-info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 32px;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .quick-info span {
+        min-height: 70px;
+        padding: 12px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        border-right: 1px solid var(--line);
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+      }
+      .quick-info span:last-child {
+        border-right: 0;
+      }
+      .form-card {
+        background: linear-gradient(
+          180deg,
+          rgba(18, 18, 18, 0.94),
+          rgba(7, 7, 7, 0.97)
+        );
+        border: 1px solid rgba(216, 199, 143, 0.32);
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+        padding: 36px;
+        position: relative;
+        overflow: hidden;
+      }
+      .form-card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          var(--gold-soft),
+          var(--gold),
+          transparent 76%
+        );
+      }
+      .form-card h2 {
+        font-size: clamp(34px, 3.2vw, 48px);
+        line-height: 0.94;
+        letter-spacing: -1px;
+        margin: 12px 0 12px;
+      }
+      .form-card > p {
+        color: rgba(255, 255, 255, 0.54);
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 26px;
+        max-width: 440px;
+      }
+      form {
+        display: grid;
+        gap: 14px;
+      }
+      .form-group {
+        display: grid;
+        gap: 7px;
+      }
+      label,
+      legend {
+        font-family: 'Inter', Arial, sans-serif;
+        color: var(--gold-soft);
+        font-size: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.45px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 14px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.045);
+        color: #fff;
+        outline: none;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      input:focus,
+      textarea:focus {
+        border-color: var(--gold);
+        background: rgba(184, 163, 106, 0.05);
+        box-shadow: 0 0 0 1px rgba(184, 163, 106, 0.18);
+      }
+      textarea {
+        min-height: 105px;
+        resize: vertical;
+      }
+      fieldset {
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        padding: 15px;
+      }
+      legend {
+        padding: 0 7px;
+      }
+      .checkbox-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px 14px;
+        margin-top: 6px;
+      }
+      .checkbox-item {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+      .checkbox-item input {
+        width: 15px;
+        height: 15px;
+        padding: 0;
+        accent-color: var(--gold);
+      }
+      .submit-btn {
+        min-height: 54px;
+        border: 1px solid var(--gold-soft);
+        background: var(--gold-soft);
+        color: #111;
+        padding: 15px 22px;
+        font-size: 11px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.25px;
+        cursor: pointer;
+        transition: 0.18s;
+      }
+      .submit-btn:hover {
+        transform: translateY(-2px);
+        background: #fff;
+        border-color: #fff;
+      }
+      .form-note {
+        color: rgba(255, 255, 255, 0.35);
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.55;
+      }
+      .hidden {
+        position: absolute !important;
+        left: -9999px !important;
+        width: 1px !important;
+        height: 1px !important;
+        opacity: 0 !important;
+      }
+      footer {
+        border-top: 1px solid var(--gold-line);
+        background: rgba(0, 0, 0, 0.96);
+        padding: 30px 24px 34px;
+      }
+      .footer-inner {
+        width: min(1240px, 100%);
+        margin: auto;
+        display: grid;
+        grid-template-columns: 0.78fr 1.22fr;
+        gap: 28px;
+      }
+      .footer-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 18px 8px 8px 0;
+      }
+      .footer-label {
+        color: var(--gold-soft);
+        font-size: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        margin-bottom: 9px;
+      }
+      .footer-address {
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .build-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.56);
+        font-size: 11px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+      }
+      .build-status:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gold-soft);
+        box-shadow: 0 0 18px rgba(216, 199, 143, 0.6);
+      }
+      .footer-map {
+        height: 245px;
+        border: 1px solid rgba(216, 199, 143, 0.24);
+        overflow: hidden;
+        filter: grayscale(0.82) contrast(1.05);
+      }
+      .footer-map iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      .footer-bottom {
+        width: min(1240px, 100%);
+        margin: 18px auto 0;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+        color: rgba(255, 255, 255, 0.42);
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .footer-links {
+        display: flex;
+        gap: 14px 18px;
+        flex-wrap: wrap;
+      }
+      .footer-links a:hover {
+        color: var(--gold-soft);
+      }
+      @media (max-width: 980px) {
+        .footer-inner {
+          grid-template-columns: 1fr;
+        }
+        .checkbox-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 720px) {
+        .top-banner {
+          font-size: 9px;
+          letter-spacing: 1px;
+        }
+        nav {
+          width: calc(100% - 30px);
+          min-height: 78px;
+        }
+        .logo {
+          height: 78px;
+        }
+        .logo img {
+          height: 148px;
+        }
+        .nav-link {
+          min-height: 38px;
+          padding: 0 11px;
+          font-size: 9px;
+        }
+        .nav-link.email,
+        .nav-link.instagram {
+          display: none;
+        }
+        main {
+          padding: 52px 18px 68px;
+        }
+        h1 {
+          font-size: clamp(48px, 15vw, 78px);
+          letter-spacing: -1.4px;
+        }
+        .lead {
+          font-size: 16px;
+        }
+        .quick-info {
+          grid-template-columns: 1fr 1fr;
+        }
+        .quick-info span:nth-child(2) {
+          border-right: 0;
+        }
+        .quick-info span:nth-child(-n + 2) {
+          border-bottom: 1px solid var(--line);
+        }
+        .form-card {
+          padding: 26px 20px;
+        }
+        .checkbox-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-map {
+          height: 215px;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+    <style>
+      main {
+        padding-top: 58px;
+      }
+      .center-stage {
+        display: grid;
+        gap: 44px;
+      }
+      .hero-copy {
+        text-align: center;
+        max-width: 980px;
+        margin: auto;
+      }
+      .hero-copy .eyebrow {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-copy .lead,
+      .hero-copy .secondary-copy {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .quick-info {
+        max-width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .form-card {
+        max-width: 900px;
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 36px;
+        align-items: start;
+      }
+      .form-intro {
+        padding-right: 18px;
+        border-right: 1px solid var(--gold-line);
+      }
+      .form-card > form {
+        margin-top: 0;
+      }
+      .form-card h2 {
+        font-size: clamp(36px, 4vw, 56px);
+      }
+      @media (max-width: 820px) {
+        .form-card {
+          grid-template-columns: 1fr;
+        }
+        .form-intro {
+          padding-right: 0;
+          border-right: 0;
+          border-bottom: 1px solid var(--gold-line);
+          padding-bottom: 22px;
+        }
+      }
+    </style>
+    <style>
+      /* =========================================================
+   MODERN FORM REFINEMENT
+   Keeps the existing PCTC palette + typography.
+   ========================================================= */
+
+      .form-card {
+        max-width: 980px;
+        grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.28fr);
+        gap: 0;
+        padding: 0;
+        border: 1px solid rgba(216, 199, 143, 0.28);
+        border-radius: 20px;
+        background:
+          radial-gradient(
+            circle at 92% 0%,
+            rgba(216, 199, 143, 0.08),
+            transparent 28%
+          ),
+          linear-gradient(145deg, rgba(17, 17, 17, 0.97), rgba(7, 7, 7, 0.985));
+        box-shadow:
+          0 34px 100px rgba(0, 0, 0, 0.55),
+          inset 0 1px 0 rgba(255, 255, 255, 0.035);
+      }
+
+      .form-card:before {
+        height: 1px;
+        left: 20px;
+        right: 20px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--gold-soft),
+          var(--gold),
+          transparent
+        );
+        opacity: 0.8;
+      }
+
+      .form-intro {
+        position: relative;
+        min-height: 100%;
+        padding: 42px 34px;
+        border-right: 1px solid rgba(255, 255, 255, 0.09);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 45%),
+          rgba(255, 255, 255, 0.012);
+      }
+
+      .form-intro:after {
+        content: '';
+        position: absolute;
+        left: 34px;
+        right: 34px;
+        bottom: 28px;
+        height: 1px;
+        background: linear-gradient(90deg, var(--gold-line), transparent);
+      }
+
+      .form-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        width: max-content;
+        margin-bottom: 15px;
+        padding: 7px 10px;
+        border: 1px solid rgba(216, 199, 143, 0.22);
+        border-radius: 999px;
+        background: rgba(184, 163, 106, 0.055);
+        color: var(--gold-soft);
+        font-size: 9px;
+        letter-spacing: 1.8px;
+      }
+
+      .form-kicker:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--gold-soft);
+        box-shadow: 0 0 14px rgba(216, 199, 143, 0.5);
+      }
+
+      .form-card h2 {
+        margin: 0 0 14px;
+        font-size: clamp(38px, 4.1vw, 58px);
+        line-height: 0.92;
+        letter-spacing: -1px;
+      }
+
+      .form-intro > p {
+        margin: 0;
+        max-width: 300px;
+        color: rgba(255, 255, 255, 0.56);
+        font-size: 13px;
+        line-height: 1.7;
+        font-weight: 600;
+      }
+
+      .form-benefits {
+        display: grid;
+        gap: 9px;
+        margin-top: 28px;
+      }
+
+      .form-benefits span {
+        position: relative;
+        padding-left: 18px;
+        color: rgba(255, 255, 255, 0.68);
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1.05px;
+      }
+
+      .form-benefits span:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 7px;
+        height: 1px;
+        background: var(--gold-soft);
+      }
+
+      .form-card > form {
+        padding: 34px;
+        gap: 16px;
+      }
+
+      .field-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .form-group {
+        gap: 7px;
+      }
+
+      label,
+      legend {
+        color: rgba(255, 255, 255, 0.53);
+        font-size: 9px;
+        letter-spacing: 1.35px;
+      }
+
+      input,
+      textarea {
+        border: 1px solid rgba(255, 255, 255, 0.105);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.035);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        transition:
+          border-color 0.18s ease,
+          background 0.18s ease,
+          box-shadow 0.18s ease,
+          transform 0.18s ease;
+      }
+
+      input {
+        min-height: 52px;
+      }
+
+      textarea {
+        min-height: 112px;
+        line-height: 1.55;
+      }
+
+      input:hover,
+      textarea:hover {
+        border-color: rgba(255, 255, 255, 0.19);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: rgba(216, 199, 143, 0.62);
+        background: rgba(184, 163, 106, 0.045);
+        box-shadow:
+          0 0 0 3px rgba(184, 163, 106, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: rgba(255, 255, 255, 0.24);
+        font-weight: 500;
+      }
+
+      fieldset {
+        padding: 0;
+        border: 0;
+        background: transparent;
+      }
+
+      legend {
+        margin-bottom: 9px;
+        padding: 0;
+      }
+
+      .checkbox-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        margin-top: 0;
+      }
+
+      .checkbox-item {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 9px 11px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 11px;
+        background: rgba(255, 255, 255, 0.025);
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 11px;
+        font-weight: 700;
+        cursor: pointer;
+        transition:
+          border-color 0.18s ease,
+          background 0.18s ease,
+          color 0.18s ease,
+          transform 0.18s ease;
+      }
+
+      .checkbox-item:hover {
+        transform: translateY(-1px);
+        border-color: rgba(216, 199, 143, 0.26);
+        background: rgba(184, 163, 106, 0.035);
+        color: rgba(255, 255, 255, 0.88);
+      }
+
+      .checkbox-item:has(input:checked) {
+        border-color: rgba(216, 199, 143, 0.48);
+        background: rgba(184, 163, 106, 0.09);
+        color: #fff;
+      }
+
+      .checkbox-item input {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        min-height: 16px;
+        flex: 0 0 16px;
+        padding: 0;
+        margin: 0;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        background: rgba(255, 255, 255, 0.035);
+        display: grid;
+        place-items: center;
+        box-shadow: none;
+        cursor: pointer;
+      }
+
+      .checkbox-item input:checked {
+        border-color: var(--gold-soft);
+        background: var(--gold-soft);
+      }
+
+      .checkbox-item input:checked:after {
+        content: '';
+        width: 6px;
+        height: 3px;
+        border-left: 2px solid #111;
+        border-bottom: 2px solid #111;
+        transform: rotate(-45deg) translateY(-1px);
+      }
+
+      .submit-btn {
+        position: relative;
+        min-height: 56px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(216, 199, 143, 0.9);
+        background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+        color: #101010;
+        font-size: 10px;
+        letter-spacing: 1.45px;
+        box-shadow: 0 12px 36px rgba(184, 163, 106, 0.12);
+      }
+
+      .submit-btn:after {
+        content: '→';
+        margin-left: 10px;
+        font-size: 15px;
+        line-height: 1;
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-2px);
+        color: #050505;
+        background: linear-gradient(135deg, #ece3c6, var(--gold-soft));
+        border-color: #ece3c6;
+        box-shadow: 0 18px 46px rgba(184, 163, 106, 0.18);
+      }
+
+      .form-note {
+        margin-top: -3px;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 9px;
+        letter-spacing: 0.15px;
+      }
+
+      @media (max-width: 820px) {
+        .form-card {
+          grid-template-columns: 1fr;
+        }
+
+        .form-intro {
+          padding: 30px 24px 26px;
+          border-right: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        .form-intro:after {
+          display: none;
+        }
+
+        .form-intro > p {
+          max-width: 520px;
+        }
+
+        .form-benefits {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 12px;
+          margin-top: 22px;
+        }
+
+        .form-card > form {
+          padding: 26px 24px 28px;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .field-row,
+        .checkbox-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .form-benefits {
+          grid-template-columns: 1fr;
+        }
+
+        .form-card {
+          border-radius: 16px;
+        }
+
+        .form-card h2 {
+          font-size: clamp(36px, 12vw, 50px);
+        }
+      }
+    </style>
+
+    <style>
+      /* VARIANT 02 — SOFT GLASS FORM */
+      .form-card {
+        max-width: 1000px;
+        border-radius: 24px;
+        grid-template-columns: 0.82fr 1.18fr;
+        background:
+          linear-gradient(145deg, rgba(22, 22, 22, 0.82), rgba(7, 7, 7, 0.93)),
+          rgba(10, 10, 10, 0.85);
+        border: 1px solid rgba(216, 199, 143, 0.24);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        box-shadow:
+          0 40px 110px rgba(0, 0, 0, 0.55),
+          inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+      .form-intro {
+        margin: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 18px;
+        background:
+          radial-gradient(
+            circle at 20% 10%,
+            rgba(216, 199, 143, 0.08),
+            transparent 34%
+          ),
+          rgba(255, 255, 255, 0.018);
+      }
+      .form-card > form {
+        padding: 34px 34px 34px 20px;
+      }
+      input,
+      textarea {
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.045);
+      }
+      input:focus,
+      textarea:focus {
+        border-color: rgba(216, 199, 143, 0.5);
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 0 0 4px rgba(184, 163, 106, 0.07);
+      }
+      .checkbox-item {
+        border-radius: 999px;
+        min-height: 42px;
+        justify-content: flex-start;
+        padding: 8px 12px;
+      }
+      .checkbox-item input {
+        border-radius: 50%;
+      }
+      .submit-btn {
+        border-radius: 999px;
+        min-height: 58px;
+        background: linear-gradient(135deg, var(--gold-soft), #c5ad70);
+        box-shadow: 0 14px 42px rgba(184, 163, 106, 0.15);
+      }
+      .submit-btn:hover {
+        background: linear-gradient(135deg, #efe6ca, var(--gold-soft));
+      }
+      @media (max-width: 820px) {
+        .form-card {
+          grid-template-columns: 1fr;
+        }
+        .form-card > form {
+          padding: 24px;
+        }
+        .form-intro {
+          margin: 12px 12px 0;
+        }
+      }
+    </style>
+
+    <style>
+      /* MODERN PCTC FOOTER */
+      footer {
+        position: relative;
+        border-top: 1px solid rgba(216, 199, 143, 0.22);
+        background:
+          radial-gradient(
+            circle at 15% 0%,
+            rgba(216, 199, 143, 0.055),
+            transparent 28%
+          ),
+          linear-gradient(180deg, #070707, #020202);
+        padding: 56px 24px 24px;
+        overflow: hidden;
+      }
+      footer:before {
+        content: 'PCTC';
+        position: absolute;
+        right: -10px;
+        bottom: -74px;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: clamp(120px, 19vw, 300px);
+        line-height: 0.75;
+        font-weight: 900;
+        letter-spacing: -0.08em;
+        color: rgba(255, 255, 255, 0.018);
+        pointer-events: none;
+        user-select: none;
+      }
+      .footer-shell {
+        position: relative;
+        z-index: 1;
+        width: min(1240px, 100%);
+        margin: 0 auto;
+        display: grid;
+        gap: 22px;
+      }
+      .footer-top {
+        display: grid;
+        grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+        gap: 22px;
+        align-items: stretch;
+      }
+      .footer-info-card,
+      .footer-map-card {
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.025);
+        overflow: hidden;
+      }
+      .footer-info-card {
+        position: relative;
+        padding: 34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 310px;
+      }
+      .footer-info-card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 28px;
+        right: 28px;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--gold-soft),
+          transparent
+        );
+      }
+      .footer-kicker {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--gold-soft);
+        font-size: 9px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        margin-bottom: 18px;
+      }
+      .footer-kicker:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gold-soft);
+        box-shadow: 0 0 16px rgba(216, 199, 143, 0.45);
+      }
+      .footer-title {
+        max-width: 430px;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: clamp(28px, 3.2vw, 44px);
+        line-height: 1.02;
+        font-weight: 900;
+        letter-spacing: -1.8px;
+        text-transform: uppercase;
+      }
+      .footer-address-modern {
+        margin-top: 18px;
+        color: rgba(255, 255, 255, 0.56);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.7;
+      }
+      .footer-actions-modern {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 28px;
+      }
+      .footer-action {
+        min-height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 14px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.025);
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        transition: 0.18s ease;
+      }
+      .footer-action:hover {
+        color: #111;
+        background: var(--gold-soft);
+        border-color: var(--gold-soft);
+        transform: translateY(-1px);
+      }
+      .footer-map-card {
+        min-height: 310px;
+        position: relative;
+      }
+      .footer-map-card iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 310px;
+        border: 0;
+        filter: none;
+      }
+      .footer-map-label {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 999px;
+        background: rgba(5, 5, 5, 0.82);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        color: #fff;
+        font-size: 9px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .footer-map-label:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--gold-soft);
+      }
+      .footer-bottom-modern {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 18px 2px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.34);
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .footer-meta {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+      }
+      .footer-meta a {
+        color: rgba(255, 255, 255, 0.46);
+        transition: 0.16s ease;
+      }
+      .footer-meta a:hover {
+        color: var(--gold-soft);
+      }
+      .footer-status-modern {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.52);
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+        font-size: 9px;
+        font-weight: 900;
+      }
+      .footer-status-modern:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gold-soft);
+        box-shadow: 0 0 14px rgba(216, 199, 143, 0.5);
+      }
+      @media (max-width: 860px) {
+        footer {
+          padding: 40px 18px 22px;
+        }
+        .footer-top {
+          grid-template-columns: 1fr;
+        }
+        .footer-info-card {
+          min-height: auto;
+          padding: 28px 24px;
+        }
+        .footer-map-card,
+        .footer-map-card iframe {
+          min-height: 250px;
+        }
+        .footer-bottom-modern {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      @media (max-width: 560px) {
+        .footer-actions-modern {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        .footer-action {
+          width: 100%;
+        }
+        .footer-meta {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+        }
+      }
+    </style>
+
+    <style>
+      /* GOOGLE WORKSPACE FORM CONNECTION */
+      .form-status {
+        min-height: 18px;
+        margin-top: -2px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.25px;
+      }
+      .form-status.sending {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .form-status.success {
+        color: var(--gold-soft);
+      }
+      .form-status.error {
+        color: #ff9b9b;
+      }
+      .submit-btn:disabled {
+        cursor: not-allowed;
+        opacity: 0.62;
+        transform: none;
+      }
+      .hidden-submit-frame {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        border: 0;
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+
+    <style>
+      /* =========================================================
+   MODERN SPLASH NAV
+   ========================================================= */
+      header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(4, 4, 4, 0.72);
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+      }
+
+      nav {
+        width: min(1240px, calc(100% - 48px));
+        min-height: 86px;
+      }
+
+      .logo {
+        height: 86px;
+      }
+
+      .logo img {
+        height: 194px;
+      }
+
+      .nav-contact {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .nav-link {
+        min-height: 42px;
+        padding: 0 15px;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1.15px;
+        transition:
+          color 0.18s ease,
+          border-color 0.18s ease,
+          background 0.18s ease,
+          transform 0.18s ease;
+      }
+
+      .nav-link:hover {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.11);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .nav-link.nav-cta {
+        gap: 10px;
+        padding: 0 17px;
+        color: #111;
+        background: var(--gold-soft);
+        border-color: var(--gold-soft);
+      }
+
+      .nav-link.nav-cta span {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1;
+        transition: transform 0.18s ease;
+      }
+
+      .nav-link.nav-cta:hover {
+        color: #111;
+        background: #ece3c6;
+        border-color: #ece3c6;
+        transform: translateY(-1px);
+      }
+
+      .nav-link.nav-cta:hover span {
+        transform: translate(2px, 2px);
+      }
+
+      @media (max-width: 720px) {
+        nav {
+          width: calc(100% - 30px);
+          min-height: 76px;
+        }
+
+        .logo {
+          height: 76px;
+        }
+
+        .logo img {
+          height: 145px;
+        }
+
+        .nav-link.instagram {
+          display: none;
+        }
+
+        .nav-link.nav-cta {
+          min-height: 38px;
+          padding: 0 13px;
+          font-size: 9px;
+        }
+      }
+    </style>
+
+    <style>
+      #interest {
+        scroll-margin-top: 110px;
+      }
+    </style>
+
+    <style>
+      /* FINAL COLOR REFINEMENT — less gold, blue primary actions */
+
+      header {
+        border-bottom-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .eyebrow,
+      .form-kicker,
+      .footer-kicker {
+        color: rgba(216, 199, 143, 0.88);
+      }
+
+      .form-card {
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .form-card:before {
+        opacity: 0.42;
+      }
+
+      .form-intro {
+        border-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .form-intro:after {
+        background: linear-gradient(
+          90deg,
+          rgba(216, 199, 143, 0.28),
+          transparent
+        );
+      }
+
+      .form-benefits span:before,
+      .eyebrow:before {
+        background: rgba(216, 199, 143, 0.72);
+      }
+
+      .nav-link.nav-cta {
+        color: #fff;
+        background: var(--blue);
+        border-color: var(--blue);
+        box-shadow: 0 10px 28px rgba(20, 118, 255, 0.18);
+      }
+
+      .nav-link.nav-cta:hover {
+        color: #fff;
+        background: var(--blue-hover);
+        border-color: var(--blue-hover);
+        box-shadow: 0 14px 34px rgba(20, 118, 255, 0.26);
+      }
+
+      .submit-btn {
+        color: #fff;
+        background: linear-gradient(135deg, var(--blue), var(--blue-deep));
+        border-color: var(--blue);
+        box-shadow: 0 14px 40px var(--blue-glow);
+      }
+
+      .submit-btn:hover {
+        color: #fff;
+        background: linear-gradient(135deg, var(--blue-hover), var(--blue));
+        border-color: var(--blue-hover);
+        box-shadow: 0 18px 48px rgba(20, 118, 255, 0.3);
+      }
+
+      .checkbox-item:has(input:checked) {
+        border-color: rgba(216, 199, 143, 0.34);
+        background: rgba(184, 163, 106, 0.055);
+      }
+
+      .footer-info-card:before {
+        opacity: 0.5;
+      }
+
+      .footer-action:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(216, 199, 143, 0.35);
+        color: var(--gold-soft);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="bg"></div>
+      <div class="bgfx"></div>
+      <div class="top-banner">
+        Coming Soon to Port Chester &nbsp;•&nbsp; Founding Member Early Interest
+        Now Open
+      </div>
+      <header>
+        <nav>
+          <a
+            href="index.html"
+            class="logo"
+            aria-label="Port Chester Training Club Home"
+            ><img
+              src="images/pctc logo-01.png"
+              alt="Port Chester Training Club Logo"
+          /></a>
+          <div class="nav-contact">
+            <a
+              class="nav-link instagram"
+              href="https://www.instagram.com/pctrainingclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Port Chester Training Club on Instagram"
+            >
+              Instagram
+            </a>
+
+            <a class="nav-link nav-cta" href="#interest">
+              Early Access
+              <span aria-hidden="true">↘</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="container center-stage">
+          <section class="hero-copy">
+            <div class="eyebrow">
+              Private Training • Small Group Classes • Athlete Performance
+            </div>
+            <h1>
+              Port Chester Training Club <span class="gold">Coming Soon.</span>
+            </h1>
+            <p class="lead">
+              A private training club built around
+              <strong
+                >coaching, performance, accountability, and community</strong
+              >
+              — without the crowded commercial-gym experience.
+            </p>
+            <p class="secondary-copy">
+              Our buildout is underway. Join the early interest list to ask a
+              question, schedule a consultation, or get first access to Founding
+              Membership information before we open.
+            </p>
+            <div class="quick-info">
+              <span>Founding Members</span><span>Small Group Classes</span
+              ><span>Personal Training</span><span>Athlete Training</span>
+            </div>
+          </section>
+          <section class="form-card" id="interest" aria-label="Interest form">
+            <div class="form-intro">
+              <div class="form-kicker">Early Access</div>
+              <h2>Join the Interest List</h2>
+              <p>
+                Tell us what you're interested in and we'll reach out with the
+                right information as we get closer to opening.
+              </p>
+
+              <div class="form-benefits" aria-label="Early interest benefits">
+                <span>Founding Member Info</span>
+                <span>Opening Updates</span>
+                <span>Consultation Requests</span>
+              </div>
+            </div>
+            <form
+              id="interestForm"
+              action="https://script.google.com/macros/s/AKfycbyzkVRdBw6vphLZL9K8fkFdukmdsOaPS442hRCeIz75sW7hbmKp2QI9JgdkxWRmp88n_w/exec"
+              method="POST"
+              target="submissionFrame"
+            >
+              <input type="hidden" name="source_url" id="source_url" value="" />
+              <input type="hidden" name="user_agent" id="user_agent" value="" />
+              <div class="field-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label
+                ><input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(914) 000-0000"
+                  autocomplete="tel"
+                />
+              </div>
+              <fieldset>
+                <legend>What are you interested in?</legend>
+                <div class="checkbox-grid">
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="interest[]"
+                      value="Personal Training"
+                    />Personal Training</label
+                  ><label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="interest[]"
+                      value="Small Group Classes"
+                    />Small Group Classes</label
+                  ><label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="interest[]"
+                      value="Athlete Performance"
+                    />Athlete Performance</label
+                  ><label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="interest[]"
+                      value="Founding Membership"
+                    />Founding Membership</label
+                  ><label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="interest[]"
+                      value="General Question"
+                    />General Question</label
+                  >
+                </div>
+              </fieldset>
+              <div class="form-group">
+                <label for="message">Message / Questions</label
+                ><textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us what you're looking for or ask us a question."
+                ></textarea>
+              </div>
+              <input
+                type="text"
+                name="_gotcha"
+                class="hidden"
+                tabindex="-1"
+                autocomplete="off"
+              /><button type="submit" class="submit-btn">
+                Join the Early Interest List
+              </button>
+              <p class="form-note">
+                We'll only use your information to follow up about Port Chester
+                Training Club.
+              </p>
+              <p
+                id="formStatus"
+                class="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+
+            <iframe
+              id="submissionFrame"
+              name="submissionFrame"
+              class="hidden-submit-frame"
+              title="Form submission"
+            ></iframe>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-shell">
+          <div class="footer-top">
+            <section
+              class="footer-info-card"
+              aria-label="Port Chester Training Club location and contact"
+            >
+              <div>
+                <div class="footer-kicker">Future Home of PCTC</div>
+                <h2 class="footer-title">
+                  Strength.<br />
+                  Performance. Community.
+                </h2>
+                <p class="footer-address-modern">
+                  21 North Main Street, Suite 301-B<br />
+                  Port Chester, NY 10573
+                </p>
+              </div>
+
+              <div class="footer-actions-modern">
+                <a
+                  class="footer-action"
+                  href="https://www.google.com/maps/search/?api=1&query=21+North+Main+Street+Suite+301-B+Port+Chester+NY+10573"
+                  target="_blank"
+                  rel="noopener"
+                  >Directions</a
+                >
+                <a
+                  class="footer-action"
+                  href="https://www.instagram.com/pctrainingclub/"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                >
+              </div>
+            </section>
+
+            <div class="footer-map-card">
+              <iframe
+                title="Port Chester Training Club location"
+                src="https://www.google.com/maps?q=21%20North%20Main%20Street%20Suite%20301-B%20Port%20Chester%2C%20NY%2010573&output=embed"
+                loading="lazy"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="footer-map-label">Port Chester, New York</div>
+            </div>
+          </div>
+
+          <div class="footer-bottom-modern">
+            <div class="footer-meta">
+              <span>© 2026 Port Chester Training Club</span>
+              <a href="mailto:info@pctrainingclub.com"
+                >info@pctrainingclub.com</a
+              >
+              <a href="tel:+19143142190">(914) 314-2190</a>
+            </div>
+            <div class="footer-status-modern">Buildout Underway</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      (() => {
+        const form = document.getElementById('interestForm');
+        const frame = document.getElementById('submissionFrame');
+        const status = document.getElementById('formStatus');
+        const submitButton = form.querySelector('.submit-btn');
+        const sourceUrl = document.getElementById('source_url');
+        const userAgent = document.getElementById('user_agent');
+
+        let waitingForResponse = false;
+        let safetyTimer = null;
+
+        function setStatus(message, type = '') {
+          status.textContent = message;
+          status.className = `form-status ${type}`.trim();
+        }
+
+        form.addEventListener('submit', (event) => {
+          const endpoint = form.getAttribute('action');
+
+          if (
+            !endpoint ||
+            endpoint.includes('PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE')
+          ) {
+            event.preventDefault();
+            setStatus(
+              'Connect the Google Apps Script Web App URL before publishing.',
+              'error',
+            );
+            return;
+          }
+
+          sourceUrl.value = window.location.href;
+          userAgent.value = navigator.userAgent;
+
+          waitingForResponse = true;
+          submitButton.disabled = true;
+          submitButton.dataset.originalText = submitButton.textContent;
+          submitButton.textContent = 'Submitting...';
+          setStatus('Sending your information...', 'sending');
+
+          clearTimeout(safetyTimer);
+          safetyTimer = setTimeout(() => {
+            if (!waitingForResponse) return;
+            waitingForResponse = false;
+            submitButton.disabled = false;
+            submitButton.textContent =
+              submitButton.dataset.originalText ||
+              'Join the Early Interest List';
+            setStatus(
+              'Submission is taking longer than expected. You can also email info@pctrainingclub.com.',
+              'error',
+            );
+          }, 15000);
+        });
+
+        frame.addEventListener('load', () => {
+          if (!waitingForResponse) return;
+
+          waitingForResponse = false;
+          clearTimeout(safetyTimer);
+
+          form.reset();
+          submitButton.disabled = false;
+          submitButton.textContent =
+            submitButton.dataset.originalText || 'Join the Early Interest List';
+
+          setStatus(
+            "You're on the list. Check your email for confirmation.",
+            'success',
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
