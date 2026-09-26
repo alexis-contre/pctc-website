@@ -3119,6 +3119,25 @@
             >
               <input type="hidden" name="source_url" id="source_url" value="" />
               <input type="hidden" name="user_agent" id="user_agent" value="" />
+
+              <!-- SPAM PROTECTION -->
+              <input
+                type="hidden"
+                name="form_started"
+                id="form_started"
+                value=""
+              />
+
+              <!-- Honeypot: real visitors never see or complete this field -->
+              <input
+                type="text"
+                name="website"
+                id="website"
+                class="hidden"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
               <div class="field-row">
                 <div class="form-group">
                   <label for="name">Name</label>
@@ -3128,6 +3147,7 @@
                     name="name"
                     placeholder="Your name"
                     autocomplete="name"
+                    maxlength="60"
                     required
                   />
                 </div>
@@ -3139,6 +3159,7 @@
                     name="email"
                     placeholder="your@email.com"
                     autocomplete="email"
+                    maxlength="120"
                     required
                   />
                 </div>
@@ -3151,6 +3172,8 @@
                   name="phone"
                   placeholder="(914) 000-0000"
                   autocomplete="tel"
+                  inputmode="tel"
+                  maxlength="20"
                 />
               </div>
               <fieldset>
@@ -3194,6 +3217,7 @@
                 ><textarea
                   id="message"
                   name="message"
+                  maxlength="1000"
                   placeholder="Tell us what you're looking for or ask us a question."
                 ></textarea>
               </div>
@@ -3298,6 +3322,13 @@
         const submitButton = form.querySelector('.submit-btn');
         const sourceUrl = document.getElementById('source_url');
         const userAgent = document.getElementById('user_agent');
+        const formStarted = document.getElementById('form_started');
+        const websiteTrap = document.getElementById('website');
+        const gotchaTrap = form.querySelector('input[name="_gotcha"]');
+        const phoneInput = document.getElementById('phone');
+
+        const MIN_SUBMIT_TIME_MS = 3000;
+        const CLIENT_COOLDOWN_MS = 15000;
 
         let waitingForResponse = false;
         let safetyTimer = null;
@@ -3306,6 +3337,24 @@
           status.textContent = message;
           status.className = `form-status ${type}`.trim();
         }
+
+        function resetFormStartTime() {
+          formStarted.value = String(Date.now());
+        }
+
+        function validUsPhone(value) {
+          if (!value.trim()) return true;
+
+          const digits = value.replace(/\D/g, '');
+
+          return (
+            digits.length === 10 ||
+            (digits.length === 11 && digits.startsWith('1'))
+          );
+        }
+
+        // Start the anti-bot timer as soon as the page is ready.
+        resetFormStartTime();
 
         form.addEventListener('submit', (event) => {
           const endpoint = form.getAttribute('action');
@@ -3322,8 +3371,66 @@
             return;
           }
 
+          // Honeypot check. A normal visitor will never populate these fields.
+          if (
+            (websiteTrap && websiteTrap.value.trim() !== '') ||
+            (gotchaTrap && gotchaTrap.value.trim() !== '')
+          ) {
+            event.preventDefault();
+
+            // Return a harmless success-style message instead of telling a bot
+            // which anti-spam check it triggered.
+            setStatus(
+              "Thanks. Your information has been received.",
+              'success',
+            );
+            form.reset();
+            resetFormStartTime();
+            return;
+          }
+
+          // Bots commonly submit forms almost instantly.
+          const startedAt = Number(formStarted.value);
+          const elapsed = Date.now() - startedAt;
+
+          if (!startedAt || elapsed < MIN_SUBMIT_TIME_MS) {
+            event.preventDefault();
+            setStatus(
+              'Please wait a moment and try submitting again.',
+              'error',
+            );
+            return;
+          }
+
+          // Optional phone field, but if supplied it must look like a US number.
+          if (!validUsPhone(phoneInput.value)) {
+            event.preventDefault();
+            phoneInput.focus();
+            setStatus(
+              'Please enter a valid 10-digit phone number, or leave the phone field blank.',
+              'error',
+            );
+            return;
+          }
+
+          // Stops accidental rapid duplicate submissions in the same browser.
+          const lastSubmit = Number(
+            sessionStorage.getItem('pctc_last_submit') || '0',
+          );
+
+          if (lastSubmit && Date.now() - lastSubmit < CLIENT_COOLDOWN_MS) {
+            event.preventDefault();
+            setStatus(
+              'Your previous submission is still being processed.',
+              'sending',
+            );
+            return;
+          }
+
           sourceUrl.value = window.location.href;
           userAgent.value = navigator.userAgent;
+
+          sessionStorage.setItem('pctc_last_submit', String(Date.now()));
 
           waitingForResponse = true;
           submitButton.disabled = true;
@@ -3334,11 +3441,13 @@
           clearTimeout(safetyTimer);
           safetyTimer = setTimeout(() => {
             if (!waitingForResponse) return;
+
             waitingForResponse = false;
             submitButton.disabled = false;
             submitButton.textContent =
               submitButton.dataset.originalText ||
               'Join the Early Interest List';
+
             setStatus(
               'Submission is taking longer than expected. You can also email info@pctrainingclub.com.',
               'error',
@@ -3353,6 +3462,8 @@
           clearTimeout(safetyTimer);
 
           form.reset();
+          resetFormStartTime();
+
           submitButton.disabled = false;
           submitButton.textContent =
             submitButton.dataset.originalText || 'Join the Early Interest List';
