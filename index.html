@@ -3380,10 +3380,7 @@
 
             // Return a harmless success-style message instead of telling a bot
             // which anti-spam check it triggered.
-            setStatus(
-              "Thanks. Your information has been received.",
-              'success',
-            );
+            setStatus('Thanks. Your information has been received.', 'success');
             form.reset();
             resetFormStartTime();
             return;
@@ -3469,7 +3466,7 @@
             submitButton.dataset.originalText || 'Join the Early Interest List';
 
           setStatus(
-            "You're on the list. Check your email for confirmation.",
+            "You're on the list. We'll be in touch as we get closer to opening.",
             'success',
           );
         });
