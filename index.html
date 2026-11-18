@@ -3959,6 +3959,364 @@
           font-size: 14px !important;
         }
       }
+
+      /* =========================================================
+         PCTC REFINEMENT — ATHLETE PERFORMANCE V2
+         Clean, image-free performance system.
+         ========================================================= */
+
+      .athletes .container {
+        width: min(var(--content), calc(100% - 48px));
+      }
+
+      .athlete-panel-v2 {
+        min-height: 0 !important;
+        display: block !important;
+        padding: clamp(36px, 5vw, 64px) !important;
+        border: 1px solid rgba(216, 199, 143, 0.15);
+        background:
+          radial-gradient(
+            circle at 8% 8%,
+            rgba(184, 163, 106, 0.12),
+            transparent 28%
+          ),
+          radial-gradient(
+            circle at 92% 88%,
+            rgba(20, 118, 255, 0.055),
+            transparent 28%
+          ),
+          linear-gradient(145deg, #090806 0%, #080808 42%, #050505 100%) !important;
+        box-shadow:
+          0 34px 100px rgba(0, 0, 0, 0.32),
+          inset 0 1px 0 rgba(255, 255, 255, 0.035);
+        overflow: hidden;
+      }
+
+      .athlete-panel-v2::before {
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          rgba(216, 199, 143, 0.9),
+          rgba(184, 163, 106, 0.26) 34%,
+          transparent 76%
+        );
+      }
+
+      .athlete-panel-v2::after {
+        display: none !important;
+      }
+
+      .athlete-panel-v2 > div:last-child {
+        padding: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+
+      .athlete-header-v2 {
+        display: grid;
+        grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+        gap: clamp(34px, 6vw, 86px);
+        align-items: end;
+      }
+
+      .athlete-heading-v2 .section-kicker {
+        justify-content: flex-start;
+      }
+
+      .athlete-heading-v2 h2 {
+        max-width: 700px;
+        margin-top: 14px;
+        font-size: clamp(3rem, 6vw, 5.4rem) !important;
+        line-height: 0.9 !important;
+        letter-spacing: -2px !important;
+      }
+
+      .athlete-intro-v2 {
+        padding-bottom: 8px;
+      }
+
+      .athlete-cap-pill {
+        display: inline-flex;
+        min-height: 30px;
+        align-items: center;
+        padding: 0 11px;
+        border: 1px solid rgba(216, 199, 143, 0.28);
+        border-radius: 999px;
+        color: var(--gold-soft);
+        background: rgba(184, 163, 106, 0.055);
+        font-size: 9px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+      }
+
+      .athlete-intro-v2 p {
+        max-width: 520px;
+        margin-top: 18px;
+        color: rgba(255, 255, 255, 0.72) !important;
+        font-size: 16px !important;
+        font-weight: 700;
+        line-height: 1.7 !important;
+      }
+
+      .athlete-values-v2 {
+        margin-top: clamp(40px, 5vw, 64px);
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .athlete-value-v2 {
+        min-height: 150px;
+        padding: 24px 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-right: 1px solid rgba(255, 255, 255, 0.08);
+        position: relative;
+      }
+
+      .athlete-value-v2:last-child {
+        border-right: 0;
+      }
+
+      .athlete-value-v2 > span {
+        position: absolute;
+        top: 18px;
+        left: 22px;
+        color: rgba(216, 199, 143, 0.52);
+        font-size: 9px;
+        font-weight: 900;
+        letter-spacing: 1.2px;
+      }
+
+      .athlete-value-v2 strong {
+        color: #fff;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: clamp(20px, 2vw, 29px);
+        font-weight: 850;
+        line-height: 1;
+        letter-spacing: -0.65px;
+      }
+
+      .athlete-value-v2 small {
+        margin-top: 9px;
+        color: rgba(255, 255, 255, 0.42);
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .athlete-copy-v2 {
+        max-width: 1060px;
+        margin: clamp(34px, 4.5vw, 54px) auto 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: clamp(28px, 5vw, 70px);
+      }
+
+      .athlete-copy-v2 p {
+        margin: 0 !important;
+        color: rgba(255, 255, 255, 0.58) !important;
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+      }
+
+      .athlete-pricing-v2 {
+        margin-top: clamp(40px, 5vw, 62px);
+        gap: 14px;
+      }
+
+      .athlete-price-card-v2 {
+        min-height: 315px;
+        padding: 28px;
+        border-radius: 0;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 42%),
+          #070707;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: none;
+      }
+
+      .athlete-price-card-v2:hover {
+        transform: translateY(-5px);
+        border-color: rgba(216, 199, 143, 0.2);
+        background:
+          radial-gradient(
+            circle at 100% 0%,
+            rgba(184, 163, 106, 0.055),
+            transparent 34%
+          ),
+          #080808;
+      }
+
+      .athlete-price-card-v2.recommended {
+        border-color: rgba(20, 118, 255, 0.48);
+        background:
+          radial-gradient(
+            circle at 100% 0%,
+            rgba(20, 118, 255, 0.09),
+            transparent 38%
+          ),
+          linear-gradient(180deg, rgba(17, 18, 21, 0.98), rgba(6, 6, 7, 0.99));
+        box-shadow: 0 24px 70px rgba(20, 118, 255, 0.08);
+      }
+
+      .athlete-price-card-v2.recommended::before {
+        display: none;
+      }
+
+      .athlete-plan-topline {
+        color: rgba(255, 255, 255, 0.34);
+        font-size: 8px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+
+      .athlete-price-card-v2.recommended .athlete-plan-topline {
+        color: rgba(20, 118, 255, 0.92);
+      }
+
+      .athlete-price-card-v2 .athlete-plan-name {
+        margin-top: 24px;
+        color: var(--gold-soft);
+        font-size: 11px;
+      }
+
+      .athlete-price-card-v2 .athlete-plan-price {
+        margin-top: 12px;
+        font-size: clamp(44px, 4vw, 62px);
+        letter-spacing: -1.6px;
+      }
+
+      .athlete-price-card-v2 .athlete-plan-price span {
+        font-size: 10px;
+      }
+
+      .athlete-price-card-v2 p {
+        max-width: 330px;
+        margin-top: 22px !important;
+        color: rgba(255, 255, 255, 0.5) !important;
+        font-size: 12px !important;
+        line-height: 1.7 !important;
+      }
+
+      .athlete-footer-v2 {
+        margin-top: 24px;
+        padding: 20px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .athlete-footer-v2 > div:first-child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 14px;
+        align-items: baseline;
+      }
+
+      .athlete-footer-v2 strong {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .athlete-footer-v2 span,
+      .athlete-session-v2 {
+        color: rgba(255, 255, 255, 0.44);
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+      }
+
+      .athlete-session-v2 {
+        color: rgba(216, 199, 143, 0.78);
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 980px) {
+        .athlete-header-v2 {
+          grid-template-columns: 1fr;
+          gap: 26px;
+        }
+
+        .athlete-values-v2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .athlete-value-v2:nth-child(2) {
+          border-right: 0;
+        }
+
+        .athlete-value-v2:nth-child(-n + 2) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .athlete-copy-v2 {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+
+        .athlete-footer-v2 {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .athlete-session-v2 {
+          text-align: left;
+          white-space: normal;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .athletes .container {
+          width: calc(100% - 30px);
+        }
+
+        .athlete-panel-v2 {
+          padding: 28px 20px !important;
+        }
+
+        .athlete-heading-v2 h2 {
+          font-size: clamp(2.5rem, 12vw, 3.8rem) !important;
+        }
+
+        .athlete-intro-v2 p {
+          font-size: 14px !important;
+        }
+
+        .athlete-values-v2 {
+          grid-template-columns: 1fr;
+        }
+
+        .athlete-value-v2,
+        .athlete-value-v2:nth-child(2) {
+          min-height: 118px;
+          border-right: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .athlete-value-v2:last-child {
+          border-bottom: 0;
+        }
+
+        .athlete-pricing-v2 {
+          grid-template-columns: 1fr;
+        }
+
+        .athlete-price-card-v2 {
+          min-height: 0;
+          padding: 24px;
+        }
+      }
     </style>
   </head>
 
@@ -4472,122 +4830,140 @@
           </div>
         </div>
       </section>
-
       <section
         class="content-section alt athletes"
         id="athletes"
         data-section="05"
       >
         <div class="container">
-          <div class="athlete-panel">
-            <div>
-              <div class="section-kicker">Athlete Performance</div>
-              <h2>Build a Better Athlete</h2>
-              <p class="athlete-lead">
-                Speed. Strength. Power. Confidence. Athlete Performance at PCTC
-                is structured training for school athletes who want to move
-                better, react faster, become stronger, and compete with more
-                confidence.
+          <div class="athlete-panel athlete-panel-v2">
+            <div class="athlete-header-v2">
+              <div class="athlete-heading-v2">
+                <div class="section-kicker">Athlete Performance</div>
+                <h2>Build a Better Athlete</h2>
+              </div>
+
+              <div class="athlete-intro-v2">
+                <span class="athlete-cap-pill">Maximum 6 Athletes</span>
+                <p>
+                  Structured small-group training for school athletes who want
+                  to move better, react faster, become stronger, and compete
+                  with more confidence.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="athlete-values-v2"
+              aria-label="Athlete Performance focus areas"
+            >
+              <div class="athlete-value-v2">
+                <span>01</span>
+                <strong>Speed</strong>
+                <small>Acceleration & first-step quickness</small>
+              </div>
+              <div class="athlete-value-v2">
+                <span>02</span>
+                <strong>Strength</strong>
+                <small>Foundational strength & movement quality</small>
+              </div>
+              <div class="athlete-value-v2">
+                <span>03</span>
+                <strong>Power</strong>
+                <small>Explosiveness & athletic force production</small>
+              </div>
+              <div class="athlete-value-v2">
+                <span>04</span>
+                <strong>Confidence</strong>
+                <small
+                  >Better movement, better preparation, better
+                  competition</small
+                >
+              </div>
+            </div>
+
+            <div class="athlete-copy-v2">
+              <p>
+                Every session has a purpose. We train first-step quickness,
+                acceleration, agility, change of direction, balance,
+                coordination, strength, power, and conditioning—the physical
+                qualities that transfer across nearly every sport.
+              </p>
+              <p>
+                Sessions are intentionally limited to 6 athletes so each athlete
+                receives real coaching, movement corrections, and individual
+                attention while still benefiting from a competitive small-group
+                environment.
               </p>
             </div>
 
-            <div class="athlete-story">
-              <div class="athlete-desktop-copy">
+            <div
+              class="athlete-pricing athlete-pricing-v2"
+              aria-label="Athlete Performance pricing"
+            >
+              <article class="athlete-price-card athlete-price-card-v2">
+                <div class="athlete-plan-topline">Flexible</div>
+                <div class="athlete-plan-name">Single Session</div>
+                <div class="athlete-plan-price">$60<span>/session</span></div>
                 <p>
-                  This is not a workout designed just to make athletes tired.
-                  Every session has a purpose. We train first-step quickness,
-                  acceleration, agility, change of direction, balance,
-                  coordination, strength, power, and conditioning—the physical
-                  qualities that transfer across nearly every sport.
+                  Best for trying the program, supplementing team training, or
+                  adding an occasional focused performance session.
                 </p>
+                <!-- <a
+                  href="https://portchestertraining.pushpress.com/landing/plans/plan_5d4195dfb6f941"
+                  class="btn secondary-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Book a Session</a
+                > -->
+              </article>
 
+              <article class="athlete-price-card athlete-price-card-v2">
+                <div class="athlete-plan-topline">Consistent</div>
+                <div class="athlete-plan-name">1x Per Week</div>
+                <div class="athlete-plan-price">$220<span>/month</span></div>
                 <p>
-                  Sessions are intentionally limited to 6 athletes so each
-                  athlete still receives real coaching, movement corrections,
-                  and individual attention while training in a competitive
-                  small-group environment. The goal is consistent development
-                  over time, which is why our monthly training options are built
-                  around one or two sessions per week.
+                  Four sessions per month. A strong option for in-season
+                  athletes or athletes adding performance training around their
+                  sport schedule.
                 </p>
-              </div>
+                <!-- <a
+                  href="https://portchestertraining.pushpress.com/landing/plans/plan_73b59cfa441743"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn secondary-btn"
+                  >Start 1x / Week</a
+                > -->
+              </article>
 
-              <div class="athlete-mobile-copy">
-                <p>
-                  Purposeful small-group training for speed, agility, strength,
-                  power, coordination, conditioning, and confidence.
-                </p>
-
-                <p>
-                  Sessions are limited to 6 athletes so every athlete receives
-                  real coaching and individual attention while training in a
-                  competitive environment.
-                </p>
-              </div>
-
-              <div
-                class="athlete-pricing"
-                aria-label="Athlete Performance pricing"
+              <article
+                class="athlete-price-card athlete-price-card-v2 recommended"
               >
-                <article class="athlete-price-card">
-                  <div class="athlete-plan-name">Single Session</div>
-                  <div class="athlete-plan-price">$60<span>/session</span></div>
-                  <p>
-                    Best for trying the program, supplementing team training, or
-                    adding an occasional focused performance session.
-                  </p>
-                  <a
-                    href="https://portchestertraining.pushpress.com/landing/plans/plan_5d4195dfb6f941"
-                    class="btn secondary-btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Book a Session</a
-                  >
-                </article>
+                <div class="athlete-plan-topline">Best for Progress</div>
+                <div class="athlete-plan-name">2x Per Week</div>
+                <div class="athlete-plan-price">$360<span>/month</span></div>
+                <p>
+                  Eight sessions per month. Our recommended option for athletes
+                  who want consistent progress in speed, strength, power, and
+                  movement.
+                </p>
+                <!-- <a
+                  href="https://portchestertraining.pushpress.com/landing/plans/plan_cde8948ee8d645"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                  >Start 2x / Week</a
+                > -->
+              </article>
+            </div>
 
-                <article class="athlete-price-card">
-                  <div class="athlete-plan-name">1x Per Week</div>
-                  <div class="athlete-plan-price">$220<span>/month</span></div>
-                  <p>
-                    Four sessions per month. A strong option for in-season
-                    athletes or athletes adding performance training around
-                    their sport schedule.
-                  </p>
-                  <a
-                    href="https://portchestertraining.pushpress.com/landing/plans/plan_73b59cfa441743"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn secondary-btn"
-                    >Start 1x / Week</a
-                  >
-                </article>
-
-                <article class="athlete-price-card recommended">
-                  <div class="athlete-plan-name">2x Per Week</div>
-                  <div class="athlete-plan-price">$360<span>/month</span></div>
-                  <p>
-                    Eight sessions per month. Our recommended option for
-                    athletes who want consistent progress in speed, strength,
-                    power, and movement.
-                  </p>
-                  <a
-                    href="https://portchestertraining.pushpress.com/landing/plans/plan_cde8948ee8d645"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn"
-                    >Start 2x / Week</a
-                  >
-                </article>
+            <div class="athlete-footer-v2">
+              <div>
+                <strong>Small group. Real coaching.</strong>
+                <span>Maximum of 6 athletes per session.</span>
               </div>
-
-              <div class="athlete-cap-note">
-                <strong>Small group. Real coaching.</strong> Every Athlete
-                Performance session is limited to 6 athletes so no one gets lost
-                in the group.
-              </div>
-
-              <div class="athlete-meta">
-                <span>Sessions: Monday–Thursday | 4:30 PM–5:25 PM</span>
-                <span>Maximum: 6 athletes per session</span>
+              <div class="athlete-session-v2">
+                Monday–Thursday&nbsp;&nbsp;•&nbsp;&nbsp;4:30 PM–5:25 PM
               </div>
             </div>
           </div>
