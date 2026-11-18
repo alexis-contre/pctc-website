@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHC0WSEV69"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JHC0WSEV69"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'G-JHC0WSEV69');
@@ -1840,7 +1845,7 @@
       }
 
       .athlete-panel::after {
-        content: '04 ATHLETES MAX';
+        content: '06 ATHLETES MAX';
         position: absolute;
         right: 28px;
         top: 28px;
@@ -3831,6 +3836,129 @@
         color: #c8c8c8;
         margin: 0 0 20px;
       }
+
+      /* =========================================================
+         ATHLETE PERFORMANCE — MEMBERSHIP PRICING
+         ========================================================= */
+      .athlete-lead {
+        margin-top: 18px;
+        color: rgba(255, 255, 255, 0.88) !important;
+        font-size: 16px !important;
+        font-weight: 700;
+        line-height: 1.7 !important;
+      }
+
+      .athlete-pricing {
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .athlete-price-card {
+        min-height: 250px;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 46%),
+          rgba(5, 5, 5, 0.82);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+
+      .athlete-price-card.recommended {
+        border-color: rgba(20, 118, 255, 0.58);
+        box-shadow: 0 20px 55px rgba(20, 118, 255, 0.12);
+      }
+
+      .athlete-price-card.recommended::before {
+        content: 'RECOMMENDED';
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 8px;
+        font-weight: 900;
+        letter-spacing: 1.1px;
+      }
+
+      .athlete-plan-name {
+        color: var(--gold-soft);
+        font-size: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+      }
+
+      .athlete-plan-price {
+        margin-top: 14px;
+        color: #fff;
+        font-family: 'Nano', 'Inter', sans-serif;
+        font-size: clamp(34px, 3vw, 48px);
+        line-height: 1;
+      }
+
+      .athlete-plan-price span {
+        margin-left: 5px;
+        color: rgba(255, 255, 255, 0.46);
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .athlete-price-card p {
+        margin-top: 16px !important;
+        color: rgba(255, 255, 255, 0.58) !important;
+        font-size: 12px !important;
+        line-height: 1.65 !important;
+      }
+
+      .athlete-price-card .btn {
+        width: 100%;
+        min-height: 46px;
+        margin-top: auto;
+        padding: 0 14px;
+        font-size: 9px;
+      }
+
+      .athlete-cap-note {
+        margin-top: 18px;
+        padding: 14px 16px;
+        border-left: 2px solid var(--gold-soft);
+        background: rgba(184, 163, 106, 0.06);
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        line-height: 1.65;
+      }
+
+      @media (max-width: 900px) {
+        .athlete-pricing {
+          grid-template-columns: 1fr;
+        }
+
+        .athlete-price-card {
+          min-height: 0;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .athlete-pricing {
+          margin-top: 22px;
+        }
+
+        .athlete-price-card {
+          padding: 18px;
+        }
+
+        .athlete-lead {
+          font-size: 14px !important;
+        }
+      }
     </style>
   </head>
 
@@ -4354,79 +4482,113 @@
           <div class="athlete-panel">
             <div>
               <div class="section-kicker">Athlete Performance</div>
-              <h2>High Performance Training for School Athletes</h2>
+              <h2>Build a Better Athlete</h2>
+              <p class="athlete-lead">
+                Speed. Strength. Power. Confidence. Athlete Performance at PCTC
+                is structured training for school athletes who want to move
+                better, react faster, become stronger, and compete with more
+                confidence.
+              </p>
             </div>
+
             <div class="athlete-story">
               <div class="athlete-desktop-copy">
                 <p>
-                  As a former high school wrestler and football player, I
-                  understand firsthand how much sports can shape an athlete
-                  beyond strength and conditioning. The discipline, confidence,
-                  resilience, and ability to respond to coaching all play a
-                  major role in how young athletes develop, both in competition
-                  and outside of it.
+                  This is not a workout designed just to make athletes tired.
+                  Every session has a purpose. We train first-step quickness,
+                  acceleration, agility, change of direction, balance,
+                  coordination, strength, power, and conditioning—the physical
+                  qualities that transfer across nearly every sport.
                 </p>
 
                 <p>
-                  Today, I coach Developmental Tennis at Sacred Heart Greenwich,
-                  where I help introduce young athletes to the sport while
-                  developing the habits, confidence, and competitive mindset
-                  that help them grow. During the spring season, I also coach
-                  the fifth- and sixth-grade tennis team, giving me the
-                  opportunity to work with young athletes at an important stage
-                  of their development.
-                </p>
-
-                <p>
-                  That experience shapes the way I approach High Performance
-                  training at PCTC. Sessions are capped at 4 athletes so each
-                  athlete receives real coaching, individual movement
-                  corrections, and attention to their specific needs. We work on
-                  the physical qualities that carry over to almost every sport,
-                  including first-step quickness, acceleration, agility, change
-                  of direction, balance, coordination, strength, power, and
-                  conditioning.
-                </p>
-
-                <p>
-                  No matter what sport an athlete plays, the goal is to improve
-                  overall athletic performance. I want athletes to move more
-                  efficiently, react faster, become stronger and more explosive,
-                  and build the confidence to compete at a higher level. The
-                  goal is not simply to make athletes tired. It is to help them
-                  become better athletes.
+                  Sessions are intentionally limited to 6 athletes so each
+                  athlete still receives real coaching, movement corrections,
+                  and individual attention while training in a competitive
+                  small-group environment. The goal is consistent development
+                  over time, which is why our monthly training options are built
+                  around one or two sessions per week.
                 </p>
               </div>
 
               <div class="athlete-mobile-copy">
                 <p>
-                  As a former high school wrestler and football player, and now
-                  a developmental tennis coach at Sacred Heart Greenwich, I
-                  understand both the physical and mental side of developing
-                  young athletes.
+                  Purposeful small-group training for speed, agility, strength,
+                  power, coordination, conditioning, and confidence.
                 </p>
 
                 <p>
-                  Sessions are capped at 4 athletes and focus on first-step
-                  quickness, acceleration, agility, change of direction,
-                  coordination, strength, power, and conditioning. No matter the
-                  sport, the goal is better overall athletic performance.
+                  Sessions are limited to 6 athletes so every athlete receives
+                  real coaching and individual attention while training in a
+                  competitive environment.
                 </p>
+              </div>
+
+              <div
+                class="athlete-pricing"
+                aria-label="Athlete Performance pricing"
+              >
+                <article class="athlete-price-card">
+                  <div class="athlete-plan-name">Single Session</div>
+                  <div class="athlete-plan-price">$60<span>/session</span></div>
+                  <p>
+                    Best for trying the program, supplementing team training, or
+                    adding an occasional focused performance session.
+                  </p>
+                  <a
+                    href="https://portchestertraining.pushpress.com/landing/plans/plan_5d4195dfb6f941"
+                    class="btn secondary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Book a Session</a
+                  >
+                </article>
+
+                <article class="athlete-price-card">
+                  <div class="athlete-plan-name">1x Per Week</div>
+                  <div class="athlete-plan-price">$220<span>/month</span></div>
+                  <p>
+                    Four sessions per month. A strong option for in-season
+                    athletes or athletes adding performance training around
+                    their sport schedule.
+                  </p>
+                  <a
+                    href="https://portchestertraining.pushpress.com/landing/plans/plan_73b59cfa441743"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn secondary-btn"
+                    >Start 1x / Week</a
+                  >
+                </article>
+
+                <article class="athlete-price-card recommended">
+                  <div class="athlete-plan-name">2x Per Week</div>
+                  <div class="athlete-plan-price">$360<span>/month</span></div>
+                  <p>
+                    Eight sessions per month. Our recommended option for
+                    athletes who want consistent progress in speed, strength,
+                    power, and movement.
+                  </p>
+                  <a
+                    href="https://portchestertraining.pushpress.com/landing/plans/plan_cde8948ee8d645"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn"
+                    >Start 2x / Week</a
+                  >
+                </article>
+              </div>
+
+              <div class="athlete-cap-note">
+                <strong>Small group. Real coaching.</strong> Every Athlete
+                Performance session is limited to 6 athletes so no one gets lost
+                in the group.
               </div>
 
               <div class="athlete-meta">
                 <span>Sessions: Monday–Thursday | 4:30 PM–5:25 PM</span>
-                <span>Investment: $60 per athlete</span>
+                <span>Maximum: 6 athletes per session</span>
               </div>
-
-              <!-- <a
-                href="https://portchestertraining.pushpress.com/landing/plans/plan_5d4195dfb6f941"
-                class="btn athlete-reserve"
-                target="_blank"
-                rel="noopener noreferrer"
-              > -->
-                Reserve Your Spot
-              </a>
             </div>
           </div>
         </div>
@@ -4458,7 +4620,7 @@
               <h3>Choose Your Program</h3>
               <p>
                 Pick Sweat, Perform, personal training, semi-private training,
-                or athlete performance.
+                or an Athlete Performance training plan.
               </p>
             </article>
 
@@ -4559,13 +4721,14 @@
             <details>
               <summary>How does Athlete Performance work?</summary>
               <p>
-                Sessions for school athletes are capped at four athletes and
-                focus on speed, agility, strength, power, coordination, and
-                conditioning. Sessions run Monday–Thursday, 4:30–5:25 PM, at $60
-                per athlete.
-                <a href="#athletes"
-                  >See Athlete Performance and reserve a spot.</a
-                >
+                Athlete Performance is small-group training focused on speed,
+                agility, strength, power, coordination, conditioning, and
+                overall athletic development. Sessions are limited to 6 athletes
+                and run Monday–Thursday from 4:30–5:25 PM. Athletes can train
+                with a $60 single session, 1x/week for $220 per month, or
+                2x/week for $360 per month. For athletes who want the most
+                consistent progress, we recommend the 2x/week option.
+                <a href="#athletes">View Athlete Performance options.</a>
               </p>
             </details>
             <details>
