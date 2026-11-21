@@ -1,71 +1,98 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHC0WSEV69"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JHC0WSEV69"
+    ></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
       gtag('js', new Date());
 
       gtag('config', 'G-JHC0WSEV69');
     </script>
 
     <title>About Us | Port Chester Training Club</title>
+
     <meta
       name="description"
       content="Learn about Port Chester Training Club, founder and head coach Alexis Contreras, and the coaching, community, and purpose behind PCTC."
     />
 
     <meta name="robots" content="index, follow" />
+
     <link rel="canonical" href="https://pctrainingclub.com/about.html" />
 
     <meta property="og:type" content="website" />
+
     <meta property="og:site_name" content="Port Chester Training Club" />
+
     <meta property="og:title" content="About Us | Port Chester Training Club" />
+
     <meta
       property="og:description"
       content="Meet founder and head coach Alexis Contreras and learn about the coaching, community, and purpose behind Port Chester Training Club."
     />
+
     <meta property="og:url" content="https://pctrainingclub.com/about.html" />
+
     <meta
       property="og:image"
       content="https://pctrainingclub.com/images/pctc@4x.png"
     />
+
     <meta property="og:image:alt" content="Port Chester Training Club logo" />
 
     <meta name="twitter:card" content="summary_large_image" />
+
     <meta
       name="twitter:title"
       content="About Us | Port Chester Training Club"
     />
+
     <meta
       name="twitter:description"
       content="Meet founder and head coach Alexis Contreras and learn about the coaching, community, and purpose behind Port Chester Training Club."
     />
+
     <meta
       name="twitter:image"
       content="https://pctrainingclub.com/images/pctc@4x.png"
     />
+
     <meta name="theme-color" content="#050505" />
 
     <link rel="icon" href="/favicon.ico?v=4" sizes="any" />
+
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg?v=4" />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="/images/favicon-32.png?v=4"
     />
+
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="/images/favicon-16.png?v=4"
     />
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -73,7 +100,9 @@
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -82,51 +111,77 @@
     <style>
       :root {
         --black: #000;
+
         --ink: #050505;
+
         --panel: #0b0b0b;
+
         --white: #fff;
+
         --grey: #a3a3a3;
+
         --line: rgba(255, 255, 255, 0.1);
+
         --gold: #b8a36a;
+
         --gold-soft: #d8c78f;
+
         --gold-line: rgba(184, 163, 106, 0.34);
+
         --blue: #1476ff;
+
         --blue-hover: #2f87ff;
+
         --blue-deep: #0f5ed1;
+
         --content: 1240px;
+
         --ease: cubic-bezier(0.16, 1, 0.3, 1);
       }
 
       * {
         box-sizing: border-box;
+
         margin: 0;
+
         padding: 0;
       }
 
       @font-face {
         font-family: 'Nano';
+
         src: url('fonts/Zeniq Nano.ttf') format('truetype');
+
         font-weight: normal;
+
         font-style: normal;
+
         font-display: swap;
       }
 
       html {
         background: #000;
+
         scroll-behavior: smooth;
       }
 
       body {
         min-height: 100vh;
+
         overflow-x: hidden;
+
         background: #000;
+
         color: #fff;
+
         font-family: 'Inter', Arial, sans-serif;
+
         line-height: 1.6;
       }
 
       a {
         color: inherit;
+
         text-decoration: none;
       }
 
@@ -137,137 +192,218 @@
       h1,
       h2 {
         font-family: 'Nano', 'Inter', sans-serif;
+
         font-weight: normal;
+
         text-transform: uppercase;
       }
 
       h3 {
         font-family: 'Inter', Arial, sans-serif;
+
         font-weight: 800;
       }
 
       ::selection {
         background: var(--gold-soft);
+
         color: #000;
       }
 
       .container {
         width: min(var(--content), calc(100% - 48px));
+
         margin: 0 auto;
       }
 
       .scroll-progress {
         position: fixed;
+
         inset: 0 auto auto 0;
+
         z-index: 2000;
+
         width: 100%;
+
         height: 2px;
+
         transform: scaleX(0);
+
         transform-origin: left center;
+
         background: linear-gradient(90deg, var(--gold-soft), var(--blue));
+
         pointer-events: none;
       }
 
       .top-banner {
         padding: 9px 18px;
+
         border-bottom: 1px solid rgba(216, 199, 143, 0.16);
+
         background: rgba(8, 8, 8, 0.98);
+
         color: var(--gold-soft);
+
         text-align: center;
+
         font-size: 11px;
+
         font-weight: 900;
+
         text-transform: uppercase;
+
         letter-spacing: 1.35px;
+      }
+
+      .top-banner a {
+        color: inherit;
+        display: inline-block;
+        width: 100%;
+      }
+
+      .top-banner a:hover {
+        color: #fff;
       }
 
       header {
         position: sticky;
+
         top: 0;
+
         z-index: 1000;
+
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
         background: rgba(4, 4, 4, 0.86);
+
         backdrop-filter: blur(20px);
+
         -webkit-backdrop-filter: blur(20px);
       }
 
       header nav {
         width: min(var(--content), calc(100% - 48px));
+
         min-height: 86px;
+
         margin: auto;
+
         display: flex;
+
         align-items: center;
+
         justify-content: space-between;
+
         gap: 24px;
       }
 
       .logo {
         height: 86px;
+
         display: flex;
+
         align-items: center;
+
         flex: 0 0 auto;
       }
 
       .logo img {
         height: 194px;
+
         width: auto;
+
         display: block;
+
         object-fit: contain;
       }
 
       .nav-links {
         display: flex;
+
         align-items: center;
+
         justify-content: flex-end;
+
         gap: 4px;
       }
 
       .nav-links > a {
         min-height: 42px;
+
         padding: 0 12px;
+
         display: inline-flex;
+
         align-items: center;
+
         justify-content: center;
+
         border: 1px solid transparent;
+
         border-radius: 999px;
+
         color: rgba(255, 255, 255, 0.62);
+
         font-size: 10px;
+
         font-weight: 800;
+
         text-transform: uppercase;
+
         letter-spacing: 1px;
+
         transition: 0.2s ease;
       }
 
       .nav-links > a:hover,
       .nav-links > a.active {
         color: #fff;
+
         border-color: rgba(216, 199, 143, 0.25);
+
         background: rgba(184, 163, 106, 0.06);
       }
 
       .nav-links .nav-cta {
         margin-left: 6px;
+
         padding: 0 17px;
+
         color: #fff;
+
         background: var(--blue);
+
         border-color: var(--blue);
+
         box-shadow: 0 10px 28px rgba(20, 118, 255, 0.18);
       }
 
       .nav-links .nav-cta:hover {
         color: #fff;
+
         background: var(--blue-hover);
+
         border-color: var(--blue-hover);
       }
 
       .mobile-toggle {
         display: none;
+
         width: 42px;
+
         height: 42px;
+
         position: relative;
+
         border: 1px solid var(--line);
+
         border-radius: 999px;
+
         background: rgba(255, 255, 255, 0.035);
+
         color: #fff;
+
         cursor: pointer;
       }
 
@@ -275,11 +411,17 @@
       .mobile-toggle::before,
       .mobile-toggle::after {
         content: '';
+
         position: absolute;
+
         left: 50%;
+
         width: 17px;
+
         height: 1.5px;
+
         transform: translateX(-50%);
+
         background: currentColor;
       }
 
@@ -297,12 +439,17 @@
 
       .page-hero {
         position: relative;
+
         overflow: hidden;
+
         padding: clamp(96px, 10vw, 150px) 0 clamp(76px, 8vw, 115px);
+
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
         background:
           radial-gradient(
             circle at 82% 16%,
+
             rgba(184, 163, 106, 0.14),
             transparent 30%
           ),
@@ -311,63 +458,95 @@
 
       .page-hero::after {
         content: 'PCTC';
+
         position: absolute;
+
         right: max(18px, calc((100vw - var(--content)) / 2));
+
         bottom: -12px;
+
         color: transparent;
+
         -webkit-text-stroke: 1px rgba(255, 255, 255, 0.055);
+
         font-family: 'Nano', 'Inter', sans-serif;
+
         font-size: clamp(90px, 16vw, 230px);
+
         line-height: 0.8;
+
         letter-spacing: 4px;
+
         pointer-events: none;
       }
 
       .hero-inner {
         position: relative;
+
         z-index: 2;
+
         max-width: 900px;
       }
 
       .eyebrow,
       .section-kicker {
         display: flex;
+
         align-items: center;
+
         gap: 10px;
+
         color: rgba(216, 199, 143, 0.9);
+
         font-size: 10px;
+
         font-weight: 900;
+
         text-transform: uppercase;
+
         letter-spacing: 2px;
       }
 
       .eyebrow::before,
       .section-kicker::before {
         content: '';
+
         width: 30px;
+
         height: 1px;
+
         background: rgba(216, 199, 143, 0.72);
       }
 
       .page-hero h1 {
         max-width: 900px;
+
         margin-top: 22px;
+
         font-size: clamp(3.5rem, 7vw, 7.1rem);
+
         line-height: 0.88;
+
         letter-spacing: -2.7px;
       }
 
       .page-hero h1 span {
         color: transparent;
+
         -webkit-text-fill-color: transparent;
+
         -webkit-text-stroke: 1.5px var(--gold-soft);
       }
 
       .page-hero p {
         max-width: 700px;
+
         margin-top: 28px;
+
         color: rgba(255, 255, 255, 0.68);
+
         font-size: clamp(16px, 1.4vw, 19px);
+
         line-height: 1.75;
       }
 
@@ -376,6 +555,7 @@
       .philosophy,
       .cta-section {
         position: relative;
+
         padding: clamp(88px, 10vw, 145px) 0;
       }
 
@@ -385,31 +565,45 @@
 
       .founder-grid {
         display: grid;
+
         grid-template-columns: minmax(320px, 0.86fr) minmax(0, 1.14fr);
+
         gap: clamp(48px, 7vw, 100px);
+
         align-items: start;
       }
 
       .founder-photo-wrap {
         position: sticky;
+
         top: 130px;
       }
 
       .founder-photo {
         position: relative;
+
         overflow: hidden;
+
         aspect-ratio: 4 / 5;
+
         border: 1px solid rgba(216, 199, 143, 0.2);
+
         border-radius: 14px;
+
         background: #080808;
+
         box-shadow: 0 35px 90px rgba(0, 0, 0, 0.4);
       }
 
       .founder-photo::after {
         content: '';
+
         position: absolute;
+
         inset: 0;
+
         pointer-events: none;
+
         background:
           linear-gradient(180deg, transparent 45%, rgba(0, 0, 0, 0.58) 100%),
           linear-gradient(90deg, rgba(184, 163, 106, 0.08), transparent 45%);
@@ -417,94 +611,140 @@
 
       .founder-photo img {
         width: 100%;
+
         height: 100%;
+
         display: block;
+
         object-fit: cover;
+
         object-position: center;
+
         filter: saturate(0.85) contrast(1.04);
       }
 
       .photo-label {
         position: absolute;
+
         left: 22px;
+
         bottom: 22px;
+
         z-index: 2;
+
         padding: 13px 16px;
+
         border: 1px solid rgba(255, 255, 255, 0.12);
+
         background: rgba(0, 0, 0, 0.76);
+
         backdrop-filter: blur(14px);
+
         -webkit-backdrop-filter: blur(14px);
       }
 
       .photo-label span {
         display: block;
+
         color: var(--gold-soft);
+
         font-size: 9px;
+
         font-weight: 900;
+
         text-transform: uppercase;
+
         letter-spacing: 1.3px;
       }
 
       .photo-label strong {
         display: block;
+
         margin-top: 3px;
+
         font-size: 15px;
+
         font-weight: 800;
       }
 
       .founder-content h2,
       .section-heading h2 {
         margin-top: 16px;
+
         font-size: clamp(2.8rem, 5vw, 4.8rem);
+
         line-height: 0.92;
+
         letter-spacing: -2px;
       }
 
       .founder-content > p {
         margin-top: 22px;
+
         color: rgba(255, 255, 255, 0.58);
+
         font-size: 14px;
+
         line-height: 1.9;
       }
 
       .founder-content .intro {
         margin-top: 30px;
+
         color: rgba(255, 255, 255, 0.84);
+
         font-size: 16px;
+
         font-weight: 600;
+
         line-height: 1.78;
       }
 
       .credentials {
         display: flex;
+
         flex-wrap: wrap;
+
         gap: 8px;
+
         margin-top: 34px;
       }
 
       .credentials span {
         padding: 9px 13px;
+
         border: 1px solid rgba(216, 199, 143, 0.22);
+
         border-radius: 999px;
+
         background: rgba(184, 163, 106, 0.055);
+
         color: rgba(216, 199, 143, 0.94);
+
         font-size: 9px;
+
         font-weight: 900;
+
         text-transform: uppercase;
+
         letter-spacing: 1px;
       }
 
       .community {
         border-top: 1px solid var(--line);
+
         border-bottom: 1px solid var(--line);
+
         background:
           radial-gradient(
             circle at 14% 20%,
+
             rgba(184, 163, 106, 0.16),
             transparent 31%
           ),
           radial-gradient(
             circle at 84% 78%,
+
             rgba(216, 199, 143, 0.08),
             transparent 28%
           ),
@@ -513,7 +753,9 @@
 
       .community-inner {
         max-width: 980px;
+
         margin: 0 auto;
+
         text-align: center;
       }
 
@@ -523,36 +765,55 @@
 
       .community h2 {
         margin-top: 18px;
+
         font-family: 'Nano', 'Inter', sans-serif;
+
         font-size: clamp(3rem, 6vw, 5.8rem);
+
         font-weight: normal;
+
         line-height: 0.9;
+
         text-transform: uppercase;
+
         letter-spacing: -2.2px;
       }
 
       .community-copy {
         max-width: 780px;
+
         margin: 34px auto 0;
+
         display: grid;
+
         gap: 20px;
       }
 
       .community-copy p {
         color: rgba(255, 255, 255, 0.64);
+
         font-size: 15px;
+
         line-height: 1.85;
       }
 
       .community-statement {
         max-width: 900px;
+
         margin: 50px auto 0;
+
         padding-top: 38px;
+
         border-top: 1px solid rgba(216, 199, 143, 0.23);
+
         color: #fff;
+
         font-size: clamp(24px, 3vw, 40px);
+
         font-weight: 800;
+
         line-height: 1.25;
+
         letter-spacing: -1px;
       }
 
@@ -566,7 +827,9 @@
 
       .section-heading {
         max-width: 800px;
+
         margin: 0 auto 54px;
+
         text-align: center;
       }
 
@@ -576,29 +839,41 @@
 
       .section-heading p {
         max-width: 670px;
+
         margin: 20px auto 0;
+
         color: rgba(255, 255, 255, 0.55);
+
         font-size: 15px;
+
         line-height: 1.8;
       }
 
       .philosophy-grid {
         display: grid;
+
         grid-template-columns: repeat(3, 1fr);
+
         gap: 14px;
       }
 
       .philosophy-card {
         min-height: 310px;
+
         padding: 30px;
+
         position: relative;
+
         overflow: hidden;
+
         border: 1px solid rgba(255, 255, 255, 0.1);
+
         background: linear-gradient(
           180deg,
           rgba(17, 17, 17, 0.95),
           rgba(6, 6, 6, 0.98)
         );
+
         transition:
           transform 0.4s var(--ease),
           border-color 0.4s ease;
@@ -606,11 +881,17 @@
 
       .philosophy-card::before {
         content: '';
+
         position: absolute;
+
         top: 0;
+
         left: 0;
+
         width: 100%;
+
         height: 1px;
+
         background: linear-gradient(
           90deg,
           rgba(216, 199, 143, 0.6),
@@ -620,54 +901,74 @@
 
       .philosophy-card:hover {
         transform: translateY(-6px);
+
         border-color: rgba(216, 199, 143, 0.24);
       }
 
       .philosophy-card .number {
         width: 36px;
+
         height: 36px;
+
         display: grid;
+
         place-items: center;
+
         border: 1px solid var(--gold-line);
+
         border-radius: 999px;
+
         color: var(--gold-soft);
+
         font-size: 10px;
+
         font-weight: 900;
       }
 
       .philosophy-card h3 {
         margin-top: 72px;
+
         font-size: 29px;
+
         line-height: 1.05;
       }
 
       .philosophy-card p {
         margin-top: 16px;
+
         color: rgba(255, 255, 255, 0.52);
+
         font-size: 13px;
+
         line-height: 1.75;
       }
 
       .cta-section {
         border-top: 1px solid var(--line);
+
         background:
           radial-gradient(
             circle at 50% 10%,
+
             rgba(20, 118, 255, 0.08),
             transparent 30%
           ),
           linear-gradient(180deg, #080808, #000);
+
         text-align: center;
       }
 
       .cta-inner {
         max-width: 880px;
+
         margin: 0 auto;
       }
 
       .cta-inner h2 {
         font-size: clamp(3rem, 6.4vw, 6rem);
+
         line-height: 0.9;
+
         letter-spacing: -2.4px;
       }
 
@@ -677,101 +978,153 @@
 
       .cta-inner p {
         max-width: 650px;
+
         margin: 26px auto 0;
+
         color: rgba(255, 255, 255, 0.62);
+
         font-size: 16px;
+
         line-height: 1.75;
       }
 
       .cta-actions {
         margin-top: 34px;
+
         display: flex;
+
         justify-content: center;
+
         flex-wrap: wrap;
+
         gap: 12px;
       }
 
       .btn {
         min-height: 48px;
+
         padding: 0 21px;
+
         display: inline-flex;
+
         align-items: center;
+
         justify-content: center;
+
         border: 1px solid var(--blue);
+
         border-radius: 999px;
+
         background: linear-gradient(135deg, var(--blue), var(--blue-deep));
+
         color: #fff;
+
         font-size: 11px;
+
         font-weight: 900;
+
         text-transform: uppercase;
+
         letter-spacing: 1px;
+
         box-shadow: 0 14px 40px rgba(20, 118, 255, 0.2);
+
         transition: 0.2s ease;
       }
 
       .btn:hover {
         transform: translateY(-2px);
+
         background: linear-gradient(135deg, var(--blue-hover), var(--blue));
       }
 
       .secondary-btn {
         border-color: rgba(255, 255, 255, 0.16);
+
         background: rgba(255, 255, 255, 0.04);
+
         box-shadow: none;
+
         color: rgba(255, 255, 255, 0.84);
       }
 
       .secondary-btn:hover {
         border-color: rgba(216, 199, 143, 0.32);
+
         background: rgba(255, 255, 255, 0.07);
+
         color: var(--gold-soft);
       }
 
       footer {
         padding: 0 0 34px;
+
         border-top: 1px solid rgba(255, 255, 255, 0.08);
+
         background: #000;
       }
 
       .footer-shell {
         width: min(var(--content), calc(100% - 48px));
+
         margin: auto;
+
         padding-top: 32px;
       }
 
       .footer-bottom {
         min-height: 62px;
+
         padding-top: 24px;
+
         display: flex;
+
         align-items: center;
+
         justify-content: space-between;
+
         gap: 20px;
+
         border-top: 1px solid var(--line);
+
         color: rgba(255, 255, 255, 0.42);
+
         font-size: 10px;
+
         font-weight: 800;
+
         text-transform: uppercase;
+
         letter-spacing: 0.8px;
       }
 
       .footer-status {
         display: inline-flex;
+
         align-items: center;
+
         gap: 8px;
+
         color: rgba(216, 199, 143, 0.72);
       }
 
       .footer-status::before {
         content: '';
+
         width: 6px;
+
         height: 6px;
+
         border-radius: 50%;
+
         background: var(--gold-soft);
       }
 
       .reveal {
         opacity: 0;
+
         transform: translateY(30px);
+
         transition:
           opacity 0.8s var(--ease),
           transform 0.8s var(--ease);
@@ -779,6 +1132,7 @@
 
       .reveal.visible {
         opacity: 1;
+
         transform: translateY(0);
       }
 
@@ -793,20 +1147,31 @@
 
         header.menu-open .nav-links {
           position: absolute;
+
           top: calc(100% + 1px);
+
           left: 24px;
+
           right: 24px;
+
           display: flex;
+
           flex-direction: column;
+
           align-items: stretch;
+
           padding: 12px;
+
           border: 1px solid var(--line);
+
           background: rgba(5, 5, 5, 0.98);
+
           box-shadow: 0 26px 70px rgba(0, 0, 0, 0.45);
         }
 
         header.menu-open .nav-links > a {
           width: 100%;
+
           display: flex;
         }
 
@@ -820,13 +1185,17 @@
 
         .founder-photo-wrap {
           position: relative;
+
           top: auto;
+
           width: min(560px, 100%);
+
           margin: 0 auto;
         }
 
         .founder-content {
           max-width: 760px;
+
           margin: 0 auto;
         }
       }
@@ -852,6 +1221,7 @@
 
         .top-banner {
           font-size: 9px;
+
           line-height: 1.45;
         }
 
@@ -885,6 +1255,7 @@
 
         .philosophy-card {
           min-height: 260px;
+
           padding: 26px;
         }
 
@@ -902,6 +1273,7 @@
 
         .footer-bottom {
           align-items: flex-start;
+
           flex-direction: column;
         }
       }
@@ -915,11 +1287,13 @@
         *::before,
         *::after {
           transition: none !important;
+
           animation: none !important;
         }
 
         .reveal {
           opacity: 1;
+
           transform: none;
         }
       }
@@ -928,103 +1302,159 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
+
         "@type": "ExerciseGym",
+
         "@id": "https://pctrainingclub.com/#business",
+
         "name": "Port Chester Training Club",
+
         "url": "https://pctrainingclub.com/",
+
         "logo": "https://pctrainingclub.com/images/pctc@4x.png",
+
         "image": "https://pctrainingclub.com/images/pctc@4x.png",
+
         "description": "Coach-led small-group fitness, personal training, and athlete performance training in Port Chester, New York.",
+
         "telephone": "+1-914-314-2190",
+
         "email": "contact@pctrainingclub.com",
+
         "priceRange": "$$",
+
         "address": {
           "@type": "PostalAddress",
+
           "streetAddress": "21 North Main Street, Suite 301-B",
+
           "addressLocality": "Port Chester",
+
           "addressRegion": "NY",
+
           "postalCode": "10573",
+
           "addressCountry": "US"
         },
+
         "sameAs": ["https://www.instagram.com/pctrainingclub/"]
       }
     </script>
+
     <style>
       .footer-links {
         display: flex;
+
         flex-wrap: wrap;
+
         gap: 12px 24px;
+
         padding-bottom: 20px;
       }
+
       .footer-links a {
         min-height: 44px;
+
         display: inline-flex;
+
         align-items: center;
       }
+
       :focus-visible {
         outline: 2px solid #b8a36a;
+
         outline-offset: 5px;
       }
     </style>
+
     <style>
       .footer-links {
         width: 100%;
+
         min-height: 0;
+
         margin: 0;
+
         justify-content: flex-start;
       }
+
       .skip-link {
         position: fixed;
+
         top: 8px;
+
         left: 16px;
+
         transform: translateY(-160%);
+
         z-index: 2000;
+
         padding: 12px 18px;
+
         background: #fff;
+
         color: #000;
+
         font-weight: 700;
       }
+
       .skip-link:focus {
         transform: translateY(0);
       }
+
       header.menu-open .nav-links {
         max-height: calc(100dvh - 110px);
+
         overflow-y: auto;
+
         overscroll-behavior: contain;
       }
+
       .schedule-help {
         color: var(--grey);
+
         font-size: 13px;
+
         margin-bottom: 12px;
       }
     </style>
+
     <noscript
       ><style>
         .reveal {
           opacity: 1 !important;
+
           transform: none !important;
         }
       </style></noscript
     >
+
     <style>
       .reveal:focus-within,
       .reveal-target:focus-within {
         opacity: 1 !important;
+
         transform: none !important;
+
         clip-path: none !important;
       }
     </style>
+
     <style>
       @media (max-width: 1080px) {
         header .nav-links {
           display: none;
         }
+
         header.menu-open .nav-links {
           display: flex;
         }
+
         .mobile-toggle {
           flex: 0 0 44px;
+
           width: 44px;
+
           height: 44px;
         }
       }
@@ -1033,11 +1463,18 @@
 
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
     <div class="top-banner">
-      Now accepting our first 25 Founding Members. Train with a community that
-      knows your name.
+      <a
+        href="https://portchestertraining.pushpress.com/landing/plans/plan_6461b7acf14a49"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Black Friday Sale • 50% Off December Founders Membership • Ends November
+        30
+      </a>
     </div>
 
     <header id="siteHeader">
@@ -1068,12 +1505,24 @@
 
         <div class="nav-links" id="navLinks">
           <a href="index.html#programs">Programs</a>
+
           <a href="index.html#schedule">Schedule</a>
+
           <a href="index.html#membership">Membership</a>
+
           <a href="index.html#training">Training</a>
+
           <a href="index.html#athletes">Athletes</a>
+
           <a href="about.html" class="active">About Us</a>
-          <a href="index.html#contact" class="nav-cta">Start Today</a>
+
+          <a
+            href="https://portchestertraining.pushpress.com/landing/plans/plan_6461b7acf14a49"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Black Friday</a
+          >
         </div>
       </nav>
     </header>
@@ -1086,6 +1535,7 @@
 
             <h1>
               More Than<br />
+
               <span>Just A Gym.</span>
             </h1>
 
@@ -1113,6 +1563,7 @@
 
                 <div class="photo-label">
                   <span>Co-Founder & Head Coach</span>
+
                   <strong>Alexis Contreras</strong>
                 </div>
               </div>
@@ -1157,7 +1608,9 @@
 
               <div class="credentials">
                 <span>NASM Certified</span>
+
                 <span>CrossFit Level 1</span>
+
                 <span>USA Weightlifting</span>
               </div>
             </div>
@@ -1201,6 +1654,7 @@
 
             <div class="community-statement">
               You don’t just find a gym.
+
               <span>You find your people.</span>
             </div>
           </div>
@@ -1211,7 +1665,9 @@
         <div class="container">
           <div class="section-heading reveal">
             <div class="section-kicker">What We Believe</div>
+
             <h2>Our Philosophy</h2>
+
             <p>
               Everything at PCTC is built around three things that matter to us:
               quality coaching, a strong community, and consistent progress.
@@ -1221,7 +1677,9 @@
           <div class="philosophy-grid">
             <article class="philosophy-card reveal">
               <div class="number">01</div>
+
               <h3>Coaching</h3>
+
               <p>
                 Every member deserves attention. We coach movement, technique,
                 progression, and effort so training is purposeful instead of
@@ -1231,7 +1689,9 @@
 
             <article class="philosophy-card reveal">
               <div class="number">02</div>
+
               <h3>Community</h3>
+
               <p>
                 We want people to know the names of the people training beside
                 them, support each other, and build relationships that extend
@@ -1241,7 +1701,9 @@
 
             <article class="philosophy-card reveal">
               <div class="number">03</div>
+
               <h3>Progress</h3>
+
               <p>
                 Progress looks different for everyone. Our job is to help you
                 keep moving forward, build confidence, and become more capable
@@ -1255,27 +1717,32 @@
       <section class="cta-section">
         <div class="container">
           <div class="cta-inner reveal">
+            <div class="section-kicker" style="justify-content: center">
+              Black Friday Founders Offer
+            </div>
+
             <h2>
-              Train With Purpose.<br />
-              <span>Find Your People.</span>
+              Join From The Beginning.<br />
+              <span>Become A Founding Member.</span>
             </h2>
 
             <p>
-              Come experience Port Chester Training Club for yourself. Meet your
-              coaches, see the space, and find the training environment that
-              fits your goals.
+              Join by <strong>November 30</strong> and receive
+              <strong>50% off your December Founders Membership</strong>. Our
+              anticipated opening is December 9, pending final inspection.
+              Regular Founders Membership pricing begins January 1, 2027.
             </p>
 
             <div class="cta-actions">
               <a
-                href="https://portchestertraining.pushpress.com/landing/plans/plan_45a6e5e569c14b"
+                href="https://portchestertraining.pushpress.com/landing/plans/plan_6461b7acf14a49"
                 class="btn"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Schedule a Free Intro Class</a
+                >Claim 50% Off December</a
               >
-              <a href="index.html#programs" class="btn secondary-btn"
-                >View Programs</a
+              <a href="index.html#membership" class="btn secondary-btn"
+                >View Memberships</a
               >
             </div>
           </div>
@@ -1291,11 +1758,12 @@
           ><a href="index.html#membership">Membership</a
           ><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
         </nav>
+
         <div class="footer-bottom">
           <div>
             © 2026 Port Chester Athletics LLC.<br />Doing business as Port
-            Chester Training Club. All rights reserved. &nbsp;•&nbsp; Group
-            Fitness • Personal Training • Athlete Performance
+            Chester Training Club. All rights reserved.  •  Group Fitness •
+            Personal Training • Athlete Performance
           </div>
 
           <div class="footer-status">Port Chester Training Club</div>
@@ -1306,17 +1774,24 @@
     <script>
       (() => {
         const header = document.getElementById('siteHeader');
+
         const toggle = document.getElementById('mobileToggle');
+
         const navLinks = document.querySelectorAll('#navLinks a');
+
         const progress = document.getElementById('scrollProgress');
+
         document.addEventListener('keydown', (event) => {
           if (
             event.key === 'Escape' &&
             header?.classList.contains('menu-open')
           ) {
             header.classList.remove('menu-open');
+
             toggle.setAttribute('aria-expanded', 'false');
+
             toggle.setAttribute('aria-label', 'Open navigation');
+
             toggle.focus();
           }
         });
@@ -1324,9 +1799,12 @@
         if (header && toggle) {
           toggle.addEventListener('click', () => {
             const open = header.classList.toggle('menu-open');
+
             toggle.setAttribute('aria-expanded', String(open));
+
             toggle.setAttribute(
               'aria-label',
+
               open ? 'Close navigation' : 'Open navigation',
             );
           });
@@ -1334,7 +1812,9 @@
           navLinks.forEach((link) => {
             link.addEventListener('click', () => {
               header.classList.remove('menu-open');
+
               toggle.setAttribute('aria-expanded', 'false');
+
               toggle.setAttribute('aria-label', 'Open navigation');
             });
           });
@@ -1343,6 +1823,7 @@
         const updateScrollUI = () => {
           const max =
             document.documentElement.scrollHeight - window.innerHeight;
+
           const pct = max > 0 ? window.scrollY / max : 0;
 
           if (progress) {
@@ -1351,6 +1832,7 @@
         };
 
         updateScrollUI();
+
         window.addEventListener('scroll', updateScrollUI, { passive: true });
 
         const revealItems = document.querySelectorAll('.reveal');
@@ -1361,12 +1843,15 @@
               entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                   entry.target.classList.add('visible');
+
                   observer.unobserve(entry.target);
                 }
               });
             },
+
             {
               threshold: 0.12,
+
               rootMargin: '0px 0px -7% 0px',
             },
           );

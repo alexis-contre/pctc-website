@@ -4317,6 +4317,184 @@
           padding: 24px;
         }
       }
+
+      /* =========================================================
+         BLACK FRIDAY 2026 — FOUNDERS MEMBERSHIP PROMOTION
+         Temporary campaign styles. Remove after November 30, 2026.
+         ========================================================= */
+      .top-banner.black-friday-banner {
+        padding: 0;
+        background: linear-gradient(
+          90deg,
+          #c9b276 0%,
+          #eadca9 48%,
+          #c9b276 100%
+        );
+        border-bottom: 0;
+        color: #050505;
+      }
+
+      .black-friday-banner a {
+        min-height: 40px;
+        padding: 9px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #050505;
+        font-size: 11px;
+        font-weight: 900;
+        line-height: 1.35;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1.25px;
+      }
+
+      .black-friday-banner .banner-arrow {
+        font-size: 14px;
+        transition: transform 0.18s ease;
+      }
+
+      .black-friday-banner a:hover .banner-arrow {
+        transform: translateX(4px);
+      }
+
+      .black-friday-badge {
+        width: fit-content;
+        margin: 28px auto 0;
+        padding: 8px 13px;
+        border: 1px solid rgba(216, 199, 143, 0.48);
+        border-radius: 999px;
+        background: rgba(184, 163, 106, 0.1);
+        color: var(--gold-soft);
+        font-size: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.35px;
+      }
+
+      .black-friday-offer {
+        max-width: 720px;
+        margin: 22px auto 0;
+        padding: 20px 22px;
+        border: 1px solid rgba(216, 199, 143, 0.24);
+        background: linear-gradient(
+          135deg,
+          rgba(184, 163, 106, 0.09),
+          rgba(255, 255, 255, 0.018)
+        );
+        text-align: center;
+      }
+
+      .black-friday-offer strong {
+        display: block;
+        color: #fff;
+        font-family: 'Nano', 'Inter', sans-serif;
+        font-size: clamp(28px, 3.1vw, 42px);
+        font-weight: normal;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: -0.6px;
+      }
+
+      .black-friday-offer span {
+        display: block;
+        margin-top: 9px;
+        color: rgba(255, 255, 255, 0.64);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.6;
+      }
+
+      .btn.black-friday-btn,
+      .cta-btn.black-friday-btn,
+      .nav-links .nav-cta.black-friday-btn {
+        border-color: var(--gold-soft);
+        background: linear-gradient(135deg, var(--gold-soft), #b79b55);
+        color: #050505;
+        box-shadow: 0 14px 40px rgba(216, 199, 143, 0.18);
+      }
+
+      .btn.black-friday-btn:hover,
+      .cta-btn.black-friday-btn:hover,
+      .nav-links .nav-cta.black-friday-btn:hover {
+        border-color: #f3e7bc;
+        background: linear-gradient(135deg, #f3e7bc, var(--gold-soft));
+        color: #000;
+        box-shadow: 0 18px 48px rgba(216, 199, 143, 0.26);
+      }
+
+      .membership-card.black-friday-card {
+        border-color: rgba(216, 199, 143, 0.48);
+        background:
+          radial-gradient(
+            520px circle at 82% 0%,
+            rgba(216, 199, 143, 0.13),
+            transparent 46%
+          ),
+          linear-gradient(180deg, rgba(18, 18, 18, 0.96), rgba(5, 5, 5, 0.98));
+        box-shadow: 0 26px 90px rgba(184, 163, 106, 0.1);
+      }
+
+      .membership-card.black-friday-card::before {
+        background: linear-gradient(
+          90deg,
+          var(--gold-soft),
+          rgba(216, 199, 143, 0.28),
+          transparent 78%
+        );
+      }
+
+      .black-friday-card .tag {
+        border-color: rgba(216, 199, 143, 0.5);
+        background: rgba(216, 199, 143, 0.11);
+        color: #f1e4b4;
+      }
+
+      .black-friday-card .price-area .price {
+        color: #fff;
+      }
+
+      .black-friday-card .sale-price-note {
+        margin-top: 9px;
+        color: var(--gold-soft);
+        font-size: 11px;
+        font-weight: 900;
+        line-height: 1.55;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+      }
+
+      .black-friday-terms {
+        margin-top: 18px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        color: rgba(255, 255, 255, 0.46);
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 1.65;
+      }
+
+      .black-friday-card li strong {
+        color: #fff;
+      }
+
+      @media (max-width: 760px) {
+        .black-friday-banner a {
+          min-height: 46px;
+          padding: 9px 12px;
+          font-size: 9px;
+          letter-spacing: 0.75px;
+        }
+
+        .black-friday-offer {
+          padding: 18px 16px;
+        }
+
+        .black-friday-offer strong {
+          font-size: clamp(26px, 9vw, 38px);
+        }
+      }
     </style>
   </head>
 
@@ -4324,9 +4502,15 @@
     <a class="skip-link" href="#top">Skip to main content</a>
     <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <div class="ambient-grid" aria-hidden="true"></div>
-    <div class="top-banner">
-      Now accepting our first 25 Founding Members. Train with a community that
-      knows your name.
+    <div class="top-banner black-friday-banner">
+      <a
+        href="#membership"
+        aria-label="View the Black Friday Founders Membership offer"
+      >
+        Black Friday Sale • 50% Off December Founders Membership • Ends November
+        30
+        <span class="banner-arrow" aria-hidden="true">→</span>
+      </a>
     </div>
 
     <header id="siteHeader">
@@ -4362,8 +4546,8 @@
           <a href="#training">Training</a>
           <a href="#athletes">Athletes</a>
           <a href="about.html">About Us</a>
-          <a href="#contact" class="nav-cta"
-            >Start Today <span aria-hidden="true">↘</span></a
+          <a href="#membership" class="nav-cta black-friday-btn"
+            >Black Friday <span aria-hidden="true">↘</span></a
           >
         </div>
       </nav>
@@ -4391,14 +4575,28 @@
                 progress.
               </p>
 
+              <div class="black-friday-badge">
+                Black Friday Sale • Ends November 30
+              </div>
+              <div
+                class="black-friday-offer"
+                aria-label="Black Friday Founders Membership offer"
+              >
+                <strong>50% Off December</strong>
+                <span
+                  >Founders Membership • $75 for December • Regular Founders
+                  rate begins January 1, 2027</span
+                >
+              </div>
+
               <div class="hero-actions">
-                <!-- <a
-                  href="https://portchestertraining.pushpress.com/landing/plans/plan_45a6e5e569c14b"
-                  class="btn"
+                <a
+                  href="https://portchestertraining.pushpress.com/landing/plans/plan_6461b7acf14a49"
+                  class="btn black-friday-btn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Schedule a Free Intro Class</a
-                > -->
+                  >Claim 50% Off December</a
+                >
                 <a href="#programs" class="btn secondary-btn">View Programs</a>
               </div>
 
@@ -4550,43 +4748,57 @@
       >
         <div class="container">
           <div class="section-title">
-            <div class="section-kicker">Membership Options</div>
-            <h2>Membership</h2>
+            <div class="section-kicker">Black Friday • Founders Membership</div>
+            <h2>50% Off <span class="accent">December</span></h2>
             <p>
-              Simple, structured memberships designed for consistency, progress,
-              and results.
+              Reserve your Founders Membership by November 30 and pay just $75
+              for December. Regular Founders pricing begins January 1, 2027.
             </p>
           </div>
 
           <div class="membership-grid">
-            <article class="membership-card featured">
-              <span class="tag">Limited</span>
+            <article
+              class="membership-card featured black-friday-card"
+              id="black-friday-offer"
+            >
+              <span class="tag">Black Friday • Ends Nov 30</span>
               <div class="card-title-area">
-                <h3>Founding Membership</h3>
-                <p class="sub">First 25 Members Only</p>
+                <h3>Founders Membership</h3>
+                <p class="sub">Limited Founding Member Availability</p>
               </div>
               <div class="price-area">
-                <div class="price">$150<span>/month</span></div>
-                <p class="price-sub">First year, then $175/month</p>
+                <div class="price">$75<span>December only</span></div>
+                <p class="sale-price-note">
+                  50% off the regular $150 Founders rate
+                </p>
+                <p class="price-sub">
+                  $150/month beginning January 1, 2027 • First year, then
+                  $175/month
+                </p>
               </div>
               <ul>
+                <li>
+                  <strong>50% off your December Founders Membership</strong>
+                </li>
                 <li>Unlimited Classes</li>
                 <li>Full Schedule Access</li>
                 <li>Founding Member Rate</li>
-                <li>
-                  <strong
-                    >$5 reservation payment credited toward your first
-                    month</strong
-                  >
-                </li>
+                <li>Membership access begins when PCTC officially opens</li>
               </ul>
               <a
-                href="https://portchestertraining.pushpress.com/landing/plans/plan_f61d01801f854f"
-                class="cta-btn"
+                href="https://portchestertraining.pushpress.com/landing/plans/plan_6461b7acf14a49"
+                class="cta-btn black-friday-btn"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Claim Founding Spot</a
+                >Claim Black Friday Offer</a
               >
+              <p class="black-friday-terms">
+                Offer valid through November 30, 2026. Anticipated opening
+                December 9, pending final inspection. The promotional $75 rate
+                applies to December 2026 only. Regular Founders Membership
+                billing of $150/month begins January 1, 2027. Opening date is
+                subject to final approval.
+              </p>
             </article>
 
             <article class="membership-card">
@@ -5046,13 +5258,16 @@
             <details>
               <summary>What is the founding membership?</summary>
               <p>
-                The founding membership is limited to the first 25 members and
-                includes unlimited classes for $150 per month for the first
-                year, then converts to the regular Unlimited membership at $175
-                per month. It is month-to-month, not a one-year commitment. The
-                $5 reservation payment is credited toward your first month.
+                The Founders Membership is limited to the first 25 members.
+                During our Black Friday sale, new Founders Members receive 50%
+                off December, making the December rate $75. Regular Founders
+                Membership billing of $150 per month begins January 1, 2027, and
+                the Founders rate applies for the first year before converting
+                to the regular Unlimited membership rate of $175 per month.
+                Membership is month-to-month, not a one-year commitment. The
+                Black Friday offer ends November 30, 2026.
                 <a
-                  href="https://portchestertraining.pushpress.com/landing/plans/plan_f61d01801f854f"
+                  href="https://portchestertraining.pushpress.com/landing/plans/plan_6461b7acf14a49"
                   target="_blank"
                   rel="noopener noreferrer"
                   >PushPress</a
